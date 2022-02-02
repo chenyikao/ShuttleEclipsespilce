@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_gcArgPqcEd2OBIsCbTCD6w" name="Package">
+  <elementImport xmi:id="_gflj8PqcEd2OBIsCbTCD6w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_gflj8fqcEd2OBIsCbTCD6w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_gflj8vqcEd2OBIsCbTCD6w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_gflj8_qcEd2OBIsCbTCD6w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_i34RAPqcEd2OBIsCbTCD6w" name="Transition">
+    <ownedAttribute xmi:id="_i34RAfqcEd2OBIsCbTCD6w" name="event" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="meta-model.uml#__trd0Pp_Ed2OBIsCbTCD6w"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RLv7lPqeEd2OBIsCbTCD6w" name="toState" type="_i4et8PqcEd2OBIsCbTCD6w" association="_RLv7kPqeEd2OBIsCbTCD6w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RMDdkfqeEd2OBIsCbTCD6w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RMDdkPqeEd2OBIsCbTCD6w" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_i4et8PqcEd2OBIsCbTCD6w" name="State">
+    <ownedAttribute xmi:id="_i4et8fqcEd2OBIsCbTCD6w" name="label" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_i4et8vqcEd2OBIsCbTCD6w" name="isFinal" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_i4et8_qcEd2OBIsCbTCD6w" name="isInitial" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_i4et9PqcEd2OBIsCbTCD6w" name="currentState" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_i4et9fqcEd2OBIsCbTCD6w" name="toTransition" type="_i34RAPqcEd2OBIsCbTCD6w" association="_i4et-PqcEd2OBIsCbTCD6w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i4et9vqcEd2OBIsCbTCD6w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i4et9_qcEd2OBIsCbTCD6w"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_i4et-PqcEd2OBIsCbTCD6w" memberEnd="_i4et-fqcEd2OBIsCbTCD6w _i4et9fqcEd2OBIsCbTCD6w">
+    <ownedEnd xmi:id="_i4et-fqcEd2OBIsCbTCD6w" name="fromState" type="_i4et8PqcEd2OBIsCbTCD6w" association="_i4et-PqcEd2OBIsCbTCD6w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i4et-vqcEd2OBIsCbTCD6w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i4et-_qcEd2OBIsCbTCD6w" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RLv7kPqeEd2OBIsCbTCD6w" memberEnd="_RLv7kfqeEd2OBIsCbTCD6w _RLv7lPqeEd2OBIsCbTCD6w">
+    <ownedEnd xmi:id="_RLv7kfqeEd2OBIsCbTCD6w" name="fromTransition" type="_i34RAPqcEd2OBIsCbTCD6w" association="_RLv7kPqeEd2OBIsCbTCD6w">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UwChsPqeEd2OBIsCbTCD6w" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UwChsfqeEd2OBIsCbTCD6w"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Package>

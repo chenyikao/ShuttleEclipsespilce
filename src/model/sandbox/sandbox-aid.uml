@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="_8MEQEIdBEdu68s_mQL53PQ" name="sandbox">
+  <packagedElement xmi:type="uml:Package" xmi:id="_WPjugIc_Edu68s_mQL53PQ" name="edu.nccu.eclipsespilce.sandbox">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZqKNIIc_Edu68s_mQL53PQ" name="RecommendingDecorator" clientDependency="_LxhXcIdBEdu68s_mQL53PQ">
+      <generalization xmi:id="_-fjyIIdAEdu68s_mQL53PQ" general="_63PnoIdAEdu68s_mQL53PQ"/>
+      <ownedOperation xmi:id="_KqI4oIdBEdu68s_mQL53PQ" name="activate" visibility="public" concurrency="concurrent"/>
+      <ownedOperation xmi:id="_KqI4oYdBEdu68s_mQL53PQ" name="refresh" visibility="public" concurrency="concurrent"/>
+      <ownedOperation xmi:id="_LxOcgIdBEdu68s_mQL53PQ" name="RecommendingDecorator" visibility="public" concurrency="concurrent">
+        <ownedParameter xmi:id="_YCD8AIdBEdu68s_mQL53PQ" name="decoratorTarget" type="_bcwMI4c_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bcAlQIc_Edu68s_mQL53PQ" name="RecommendingDecoratorProvider" clientDependency="_bdyt8Ic_Edu68s_mQL53PQ _beGP8Yc_Edu68s_mQL53PQ _beZK4Yc_Edu68s_mQL53PQ">
+      <generalization xmi:id="_bcJvMYc_Edu68s_mQL53PQ" general="_bcJvMIc_Edu68s_mQL53PQ"/>
+      <ownedOperation xmi:id="_bcTgMIc_Edu68s_mQL53PQ" name="removeProviderChangeListener" visibility="public" concurrency="concurrent">
+        <ownedParameter xmi:id="_bcdRMYc_Edu68s_mQL53PQ" name="listener" type="_bcdRMIc_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bcmbIIc_Edu68s_mQL53PQ" name="addProviderChangeListener" visibility="public" concurrency="concurrent">
+        <ownedParameter xmi:id="_bcmbIYc_Edu68s_mQL53PQ" name="listener" type="_bcdRMIc_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bcmbIoc_Edu68s_mQL53PQ" name="provides" visibility="public" concurrency="concurrent">
+        <ownedParameter xmi:id="_bcwMIIc_Edu68s_mQL53PQ" name="operation" type="_bcmbI4c_Edu68s_mQL53PQ"/>
+        <ownedParameter xmi:id="_bcwMIYc_Edu68s_mQL53PQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bcwMIoc_Edu68s_mQL53PQ" name="createDecorators" visibility="public" concurrency="concurrent">
+        <ownedParameter xmi:id="_bc59IIc_Edu68s_mQL53PQ" name="decoratorTarget" type="_bcwMI4c_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bgVEkIc_Edu68s_mQL53PQ" name="Recommender"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bgxwgIc_Edu68s_mQL53PQ" name="Activator" clientDependency="_bitqMIc_Edu68s_mQL53PQ _bitqM4c_Edu68s_mQL53PQ _bi3bMoc_Edu68s_mQL53PQ _bjKWIYc_Edu68s_mQL53PQ">
+      <generalization xmi:id="_bg66coc_Edu68s_mQL53PQ" general="_bg66cYc_Edu68s_mQL53PQ"/>
+      <ownedAttribute xmi:id="_bhOccIc_Edu68s_mQL53PQ" name="pLUGIN_ID" visibility="public" isLeaf="true" isStatic="true" type="_bhXmYoc_Edu68s_mQL53PQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_biHNQYc_Edu68s_mQL53PQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_biHNQIc_Edu68s_mQL53PQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_bhXmY4c_Edu68s_mQL53PQ" name="plugin" visibility="private" isStatic="true" type="_bgxwgIc_Edu68s_mQL53PQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_biQ-QYc_Edu68s_mQL53PQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_biQ-QIc_Edu68s_mQL53PQ"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_bhXmZIc_Edu68s_mQL53PQ" name="getDefault" visibility="public" isStatic="true" concurrency="concurrent">
+        <ownedParameter xmi:id="_bhhXYIc_Edu68s_mQL53PQ" type="_bgxwgIc_Edu68s_mQL53PQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bhhXYYc_Edu68s_mQL53PQ" name="stop" visibility="public" concurrency="concurrent" raisedException="_bh0SUIc_Edu68s_mQL53PQ">
+        <ownedParameter xmi:id="_bhrIYYc_Edu68s_mQL53PQ" name="context" type="_bhrIYIc_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bh0SUYc_Edu68s_mQL53PQ" name="start" visibility="public" concurrency="concurrent" raisedException="_bh0SUIc_Edu68s_mQL53PQ">
+        <ownedParameter xmi:id="_bh0SUoc_Edu68s_mQL53PQ" name="context" type="_bhrIYIc_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bh-DUIc_Edu68s_mQL53PQ" name="Activator" visibility="public" concurrency="concurrent"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZqKNIIc_Edu68s_mQL53PQ" name="RecommendingDecorator" clientDependency="_LxhXcIdBEdu68s_mQL53PQ">
+    <generalization xmi:id="_-fjyIIdAEdu68s_mQL53PQ" general="_63PnoIdAEdu68s_mQL53PQ"/>
+    <ownedOperation xmi:id="_KqI4oIdBEdu68s_mQL53PQ" name="activate" visibility="public" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_KqI4oYdBEdu68s_mQL53PQ" name="refresh" visibility="public" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_LxOcgIdBEdu68s_mQL53PQ" name="RecommendingDecorator" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_YCD8AIdBEdu68s_mQL53PQ" name="decoratorTarget" type="_bcwMI4c_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bcAlQIc_Edu68s_mQL53PQ" name="RecommendingDecoratorProvider" clientDependency="_bdyt8Ic_Edu68s_mQL53PQ _beGP8Yc_Edu68s_mQL53PQ _beZK4Yc_Edu68s_mQL53PQ">
+    <generalization xmi:id="_bcJvMYc_Edu68s_mQL53PQ" general="_bcJvMIc_Edu68s_mQL53PQ"/>
+    <ownedOperation xmi:id="_bcTgMIc_Edu68s_mQL53PQ" name="removeProviderChangeListener" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_bcdRMYc_Edu68s_mQL53PQ" name="listener" type="_bcdRMIc_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bcmbIIc_Edu68s_mQL53PQ" name="addProviderChangeListener" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_bcmbIYc_Edu68s_mQL53PQ" name="listener" type="_bcdRMIc_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bcmbIoc_Edu68s_mQL53PQ" name="provides" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_bcwMIIc_Edu68s_mQL53PQ" name="operation" type="_bcmbI4c_Edu68s_mQL53PQ"/>
+      <ownedParameter xmi:id="_bcwMIYc_Edu68s_mQL53PQ" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bcwMIoc_Edu68s_mQL53PQ" name="createDecorators" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_bc59IIc_Edu68s_mQL53PQ" name="decoratorTarget" type="_bcwMI4c_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bcAlQYc_Edu68s_mQL53PQ" name="org.eclipse.gmf.runtime.diagram.ui.services.decorator">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_bcJvMIc_Edu68s_mQL53PQ" name="IDecoratorProvider" isAbstract="true">
+      <generalization xmi:id="_bqBMEYc_Edu68s_mQL53PQ" general="_bqBMEIc_Edu68s_mQL53PQ"/>
+      <generalization xmi:id="_bqBME4c_Edu68s_mQL53PQ" general="_bqBMEoc_Edu68s_mQL53PQ"/>
+      <ownedOperation xmi:id="_bqKWAIc_Edu68s_mQL53PQ" name="createDecorators" visibility="public" isAbstract="true" concurrency="concurrent">
+        <ownedParameter xmi:id="_bqKWAYc_Edu68s_mQL53PQ" name="decoratorTarget" type="_bcwMI4c_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_bcwMI4c_Edu68s_mQL53PQ" name="IDecoratorTarget" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_63PnoIdAEdu68s_mQL53PQ" name="AbstractDecorator" isAbstract="true">
+      <generalization xmi:id="_63ZYoIdAEdu68s_mQL53PQ" general="_bqBMEIc_Edu68s_mQL53PQ"/>
+      <generalization xmi:id="_63ZYoodAEdu68s_mQL53PQ" general="_63ZYoYdAEdu68s_mQL53PQ"/>
+      <ownedAttribute xmi:id="_632EkIdAEdu68s_mQL53PQ" name="decoration" visibility="private" type="_632EkodAEdu68s_mQL53PQ"/>
+      <ownedAttribute xmi:id="_632Ek4dAEdu68s_mQL53PQ" name="decoratorTarget" visibility="private" type="_64I_godAEdu68s_mQL53PQ"/>
+      <ownedOperation xmi:id="_64I_g4dAEdu68s_mQL53PQ" name="removeDecoration" visibility="protected" concurrency="concurrent"/>
+      <ownedOperation xmi:id="_64SwgIdAEdu68s_mQL53PQ" name="getDecoratorTarget" visibility="protected" concurrency="concurrent">
+        <ownedParameter xmi:id="_64SwgYdAEdu68s_mQL53PQ" type="_64I_godAEdu68s_mQL53PQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_64SwgodAEdu68s_mQL53PQ" name="deactivate" visibility="public" concurrency="concurrent"/>
+      <ownedOperation xmi:id="_64b6cIdAEdu68s_mQL53PQ" name="getDecoration" visibility="public" concurrency="concurrent">
+        <ownedParameter xmi:id="_64b6cYdAEdu68s_mQL53PQ" type="_632EkodAEdu68s_mQL53PQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_64b6codAEdu68s_mQL53PQ" name="setDecoration" visibility="public" concurrency="concurrent">
+        <ownedParameter xmi:id="_64lrcYdAEdu68s_mQL53PQ" name="decoration" type="_64lrcIdAEdu68s_mQL53PQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_64lrcodAEdu68s_mQL53PQ" name="AbstractDecorator" visibility="public" concurrency="concurrent">
+        <ownedParameter xmi:id="_64lrc4dAEdu68s_mQL53PQ" name="decoratorTarget" type="_bcwMI4c_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_63ZYoYdAEdu68s_mQL53PQ" name="IDecorator" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_64lrcIdAEdu68s_mQL53PQ" name="IDecoration" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_bcJvMIc_Edu68s_mQL53PQ" name="IDecoratorProvider" isAbstract="true">
+    <generalization xmi:id="_bqBMEYc_Edu68s_mQL53PQ" general="_bqBMEIc_Edu68s_mQL53PQ"/>
+    <generalization xmi:id="_bqBME4c_Edu68s_mQL53PQ" general="_bqBMEoc_Edu68s_mQL53PQ"/>
+    <ownedOperation xmi:id="_bqKWAIc_Edu68s_mQL53PQ" name="createDecorators" visibility="public" isAbstract="true" concurrency="concurrent">
+      <ownedParameter xmi:id="_bqKWAYc_Edu68s_mQL53PQ" name="decoratorTarget" type="_bcwMI4c_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bcTgMYc_Edu68s_mQL53PQ" name="org.eclipse.gmf.runtime.common.core.service">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_bcdRMIc_Edu68s_mQL53PQ" name="IProviderChangeListener" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_bcmbI4c_Edu68s_mQL53PQ" name="IOperation" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_bqBMEoc_Edu68s_mQL53PQ" name="IProvider" isAbstract="true">
+      <generalization xmi:id="_9ZySUIc_Edu68s_mQL53PQ" general="_bqBMEIc_Edu68s_mQL53PQ"/>
+      <ownedOperation xmi:id="_9aYvQIc_Edu68s_mQL53PQ" name="addProviderChangeListener" visibility="public" isAbstract="true" concurrency="concurrent">
+        <ownedParameter xmi:id="_9aYvQYc_Edu68s_mQL53PQ" name="listener" type="_bcdRMIc_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_9aYvQoc_Edu68s_mQL53PQ" name="removeProviderChangeListener" visibility="public" isAbstract="true" concurrency="concurrent">
+        <ownedParameter xmi:id="_9aYvQ4c_Edu68s_mQL53PQ" name="listener" type="_bcdRMIc_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_9aYvRIc_Edu68s_mQL53PQ" name="provides" visibility="public" isAbstract="true" concurrency="concurrent">
+        <ownedParameter xmi:id="_9aYvRYc_Edu68s_mQL53PQ" name="operation" type="_bcmbI4c_Edu68s_mQL53PQ"/>
+        <ownedParameter xmi:id="_9ah5MIc_Edu68s_mQL53PQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_bcdRMIc_Edu68s_mQL53PQ" name="IProviderChangeListener" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_bcmbI4c_Edu68s_mQL53PQ" name="IOperation" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_bcwMI4c_Edu68s_mQL53PQ" name="IDecoratorTarget" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bgVEkIc_Edu68s_mQL53PQ" name="Recommender"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bgxwgIc_Edu68s_mQL53PQ" name="Activator" clientDependency="_bitqMIc_Edu68s_mQL53PQ _bitqM4c_Edu68s_mQL53PQ _bi3bMoc_Edu68s_mQL53PQ _bjKWIYc_Edu68s_mQL53PQ">
+    <generalization xmi:id="_bg66coc_Edu68s_mQL53PQ" general="_bg66cYc_Edu68s_mQL53PQ"/>
+    <ownedAttribute xmi:id="_bhOccIc_Edu68s_mQL53PQ" name="pLUGIN_ID" visibility="public" isLeaf="true" isStatic="true" type="_bhXmYoc_Edu68s_mQL53PQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_biHNQYc_Edu68s_mQL53PQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_biHNQIc_Edu68s_mQL53PQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_bhXmY4c_Edu68s_mQL53PQ" name="plugin" visibility="private" isStatic="true" type="_bgxwgIc_Edu68s_mQL53PQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_biQ-QYc_Edu68s_mQL53PQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_biQ-QIc_Edu68s_mQL53PQ"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_bhXmZIc_Edu68s_mQL53PQ" name="getDefault" visibility="public" isStatic="true" concurrency="concurrent">
+      <ownedParameter xmi:id="_bhhXYIc_Edu68s_mQL53PQ" type="_bgxwgIc_Edu68s_mQL53PQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bhhXYYc_Edu68s_mQL53PQ" name="stop" visibility="public" concurrency="concurrent" raisedException="_bh0SUIc_Edu68s_mQL53PQ">
+      <ownedParameter xmi:id="_bhrIYYc_Edu68s_mQL53PQ" name="context" type="_bhrIYIc_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bh0SUYc_Edu68s_mQL53PQ" name="start" visibility="public" concurrency="concurrent" raisedException="_bh0SUIc_Edu68s_mQL53PQ">
+      <ownedParameter xmi:id="_bh0SUoc_Edu68s_mQL53PQ" name="context" type="_bhrIYIc_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bh-DUIc_Edu68s_mQL53PQ" name="Activator" visibility="public" concurrency="concurrent"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bg66cIc_Edu68s_mQL53PQ" name="org.eclipse.ui.plugin">
+    <packagedElement xmi:type="uml:Class" xmi:id="_bg66cYc_Edu68s_mQL53PQ" name="AbstractUIPlugin" isAbstract="true">
+      <generalization xmi:id="_bqwy8Ic_Edu68s_mQL53PQ" general="_bqdQ8Yc_Edu68s_mQL53PQ"/>
+      <ownedAttribute xmi:id="_bt4_cIc_Edu68s_mQL53PQ" name="imageRegistry" visibility="private" type="_bt4_coc_Edu68s_mQL53PQ"/>
+      <ownedAttribute xmi:id="_bt4_c4c_Edu68s_mQL53PQ" name="dialogSettings" visibility="private" type="_buCJYYc_Edu68s_mQL53PQ"/>
+      <ownedAttribute xmi:id="_buCJYoc_Edu68s_mQL53PQ" name="preferenceStore" visibility="private" type="_buL6YIc_Edu68s_mQL53PQ"/>
+      <ownedAttribute xmi:id="_buL6YYc_Edu68s_mQL53PQ" name="fN_DIALOG_SETTINGS" visibility="private" isLeaf="true" isStatic="true" type="_bhXmYoc_Edu68s_mQL53PQ" isReadOnly="true"/>
+      <ownedAttribute xmi:id="_buL6Yoc_Edu68s_mQL53PQ" name="bundleListener" visibility="private" type="_buL6Y4c_Edu68s_mQL53PQ"/>
+      <ownedOperation xmi:id="_buVrYIc_Edu68s_mQL53PQ" name="getWorkbench" visibility="public" concurrency="concurrent">
+        <ownedParameter xmi:id="_buVrY4c_Edu68s_mQL53PQ" type="_buVrYoc_Edu68s_mQL53PQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_buVrZIc_Edu68s_mQL53PQ" name="initializeDefaultPreferences" visibility="protected" concurrency="concurrent">
+        <ownedParameter xmi:id="_buomUIc_Edu68s_mQL53PQ" name="store" type="_bue1UYc_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_buomUYc_Edu68s_mQL53PQ" name="refreshPluginActions" visibility="protected" concurrency="concurrent"/>
+      <ownedOperation xmi:id="_buomUoc_Edu68s_mQL53PQ" name="initializeDefaultPluginPreferences" visibility="protected" concurrency="concurrent"/>
+      <ownedOperation xmi:id="_buyXUIc_Edu68s_mQL53PQ" name="imageDescriptorFromPlugin" visibility="public" isStatic="true" concurrency="concurrent">
+        <ownedParameter xmi:id="_buyXUYc_Edu68s_mQL53PQ" name="pluginId" type="_bhXmYoc_Edu68s_mQL53PQ"/>
+        <ownedParameter xmi:id="_buyXUoc_Edu68s_mQL53PQ" name="imageFilePath" type="_bhXmYoc_Edu68s_mQL53PQ"/>
+        <ownedParameter xmi:id="_buyXVIc_Edu68s_mQL53PQ" type="_buyXU4c_Edu68s_mQL53PQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_buyXVYc_Edu68s_mQL53PQ" name="loadPreferenceStore" visibility="protected" concurrency="concurrent"/>
+      <ownedOperation xmi:id="_bu7hQIc_Edu68s_mQL53PQ" name="initializeImageRegistry" visibility="protected" concurrency="concurrent">
+        <ownedParameter xmi:id="_bu7hQYc_Edu68s_mQL53PQ" name="reg" type="_bt4_coc_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bu7hQoc_Edu68s_mQL53PQ" name="getPreferenceStore" visibility="public" concurrency="concurrent">
+        <ownedParameter xmi:id="_bu7hQ4c_Edu68s_mQL53PQ" type="_bue1UYc_Edu68s_mQL53PQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bu7hRIc_Edu68s_mQL53PQ" name="getDialogSettings" visibility="public" concurrency="concurrent">
+        <ownedParameter xmi:id="_bvFSQYc_Edu68s_mQL53PQ" type="_bvFSQIc_Edu68s_mQL53PQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bvFSQoc_Edu68s_mQL53PQ" name="createImageRegistry" visibility="protected" concurrency="concurrent">
+        <ownedParameter xmi:id="_bvFSQ4c_Edu68s_mQL53PQ" type="_bt4_coc_Edu68s_mQL53PQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bvFSRIc_Edu68s_mQL53PQ" name="savePreferenceStore" visibility="protected" concurrency="concurrent"/>
+      <ownedOperation xmi:id="_bvFSRYc_Edu68s_mQL53PQ" name="getImageRegistry" visibility="public" concurrency="concurrent">
+        <ownedParameter xmi:id="_bvFSRoc_Edu68s_mQL53PQ" type="_bt4_coc_Edu68s_mQL53PQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bvFSR4c_Edu68s_mQL53PQ" name="shutdown" visibility="public" concurrency="concurrent" raisedException="_bvOcMIc_Edu68s_mQL53PQ"/>
+      <ownedOperation xmi:id="_bvOcMYc_Edu68s_mQL53PQ" name="stop" visibility="public" concurrency="concurrent" raisedException="_bh0SUIc_Edu68s_mQL53PQ">
+        <ownedParameter xmi:id="_bvOcMoc_Edu68s_mQL53PQ" name="context" type="_bhrIYIc_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bvYNMIc_Edu68s_mQL53PQ" name="start" visibility="public" concurrency="concurrent" raisedException="_bh0SUIc_Edu68s_mQL53PQ">
+        <ownedParameter xmi:id="_bvYNMYc_Edu68s_mQL53PQ" name="context" type="_bhrIYIc_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bvYNMoc_Edu68s_mQL53PQ" name="loadDialogSettings" visibility="protected" concurrency="concurrent"/>
+      <ownedOperation xmi:id="_bvYNM4c_Edu68s_mQL53PQ" name="getStateLocationOrNull" visibility="private" concurrency="concurrent">
+        <ownedParameter xmi:id="_bv-qIYc_Edu68s_mQL53PQ" type="_bv-qIIc_Edu68s_mQL53PQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bv-qIoc_Edu68s_mQL53PQ" name="saveDialogSettings" visibility="protected" concurrency="concurrent"/>
+      <ownedOperation xmi:id="_bv-qI4c_Edu68s_mQL53PQ" name="startup" visibility="public" concurrency="concurrent" raisedException="_bvOcMIc_Edu68s_mQL53PQ"/>
+      <ownedOperation xmi:id="_bv-qJIc_Edu68s_mQL53PQ" name="AbstractUIPlugin" visibility="public" concurrency="concurrent"/>
+      <ownedOperation xmi:id="_bwH0EIc_Edu68s_mQL53PQ" name="AbstractUIPlugin" visibility="public" concurrency="concurrent">
+        <ownedParameter xmi:id="_bwH0Eoc_Edu68s_mQL53PQ" name="descriptor" type="_bwH0EYc_Edu68s_mQL53PQ"/>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bg66cYc_Edu68s_mQL53PQ" name="AbstractUIPlugin" isAbstract="true">
+    <generalization xmi:id="_bqwy8Ic_Edu68s_mQL53PQ" general="_bqdQ8Yc_Edu68s_mQL53PQ"/>
+    <ownedAttribute xmi:id="_bt4_cIc_Edu68s_mQL53PQ" name="imageRegistry" visibility="private" type="_bt4_coc_Edu68s_mQL53PQ"/>
+    <ownedAttribute xmi:id="_bt4_c4c_Edu68s_mQL53PQ" name="dialogSettings" visibility="private" type="_buCJYYc_Edu68s_mQL53PQ"/>
+    <ownedAttribute xmi:id="_buCJYoc_Edu68s_mQL53PQ" name="preferenceStore" visibility="private" type="_buL6YIc_Edu68s_mQL53PQ"/>
+    <ownedAttribute xmi:id="_buL6YYc_Edu68s_mQL53PQ" name="fN_DIALOG_SETTINGS" visibility="private" isLeaf="true" isStatic="true" type="_bhXmYoc_Edu68s_mQL53PQ" isReadOnly="true"/>
+    <ownedAttribute xmi:id="_buL6Yoc_Edu68s_mQL53PQ" name="bundleListener" visibility="private" type="_buL6Y4c_Edu68s_mQL53PQ"/>
+    <ownedOperation xmi:id="_buVrYIc_Edu68s_mQL53PQ" name="getWorkbench" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_buVrY4c_Edu68s_mQL53PQ" type="_buVrYoc_Edu68s_mQL53PQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_buVrZIc_Edu68s_mQL53PQ" name="initializeDefaultPreferences" visibility="protected" concurrency="concurrent">
+      <ownedParameter xmi:id="_buomUIc_Edu68s_mQL53PQ" name="store" type="_bue1UYc_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_buomUYc_Edu68s_mQL53PQ" name="refreshPluginActions" visibility="protected" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_buomUoc_Edu68s_mQL53PQ" name="initializeDefaultPluginPreferences" visibility="protected" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_buyXUIc_Edu68s_mQL53PQ" name="imageDescriptorFromPlugin" visibility="public" isStatic="true" concurrency="concurrent">
+      <ownedParameter xmi:id="_buyXUYc_Edu68s_mQL53PQ" name="pluginId" type="_bhXmYoc_Edu68s_mQL53PQ"/>
+      <ownedParameter xmi:id="_buyXUoc_Edu68s_mQL53PQ" name="imageFilePath" type="_bhXmYoc_Edu68s_mQL53PQ"/>
+      <ownedParameter xmi:id="_buyXVIc_Edu68s_mQL53PQ" type="_buyXU4c_Edu68s_mQL53PQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_buyXVYc_Edu68s_mQL53PQ" name="loadPreferenceStore" visibility="protected" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_bu7hQIc_Edu68s_mQL53PQ" name="initializeImageRegistry" visibility="protected" concurrency="concurrent">
+      <ownedParameter xmi:id="_bu7hQYc_Edu68s_mQL53PQ" name="reg" type="_bt4_coc_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bu7hQoc_Edu68s_mQL53PQ" name="getPreferenceStore" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_bu7hQ4c_Edu68s_mQL53PQ" type="_bue1UYc_Edu68s_mQL53PQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bu7hRIc_Edu68s_mQL53PQ" name="getDialogSettings" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_bvFSQYc_Edu68s_mQL53PQ" type="_bvFSQIc_Edu68s_mQL53PQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bvFSQoc_Edu68s_mQL53PQ" name="createImageRegistry" visibility="protected" concurrency="concurrent">
+      <ownedParameter xmi:id="_bvFSQ4c_Edu68s_mQL53PQ" type="_bt4_coc_Edu68s_mQL53PQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bvFSRIc_Edu68s_mQL53PQ" name="savePreferenceStore" visibility="protected" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_bvFSRYc_Edu68s_mQL53PQ" name="getImageRegistry" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_bvFSRoc_Edu68s_mQL53PQ" type="_bt4_coc_Edu68s_mQL53PQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bvFSR4c_Edu68s_mQL53PQ" name="shutdown" visibility="public" concurrency="concurrent" raisedException="_bvOcMIc_Edu68s_mQL53PQ"/>
+    <ownedOperation xmi:id="_bvOcMYc_Edu68s_mQL53PQ" name="stop" visibility="public" concurrency="concurrent" raisedException="_bh0SUIc_Edu68s_mQL53PQ">
+      <ownedParameter xmi:id="_bvOcMoc_Edu68s_mQL53PQ" name="context" type="_bhrIYIc_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bvYNMIc_Edu68s_mQL53PQ" name="start" visibility="public" concurrency="concurrent" raisedException="_bh0SUIc_Edu68s_mQL53PQ">
+      <ownedParameter xmi:id="_bvYNMYc_Edu68s_mQL53PQ" name="context" type="_bhrIYIc_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bvYNMoc_Edu68s_mQL53PQ" name="loadDialogSettings" visibility="protected" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_bvYNM4c_Edu68s_mQL53PQ" name="getStateLocationOrNull" visibility="private" concurrency="concurrent">
+      <ownedParameter xmi:id="_bv-qIYc_Edu68s_mQL53PQ" type="_bv-qIIc_Edu68s_mQL53PQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bv-qIoc_Edu68s_mQL53PQ" name="saveDialogSettings" visibility="protected" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_bv-qI4c_Edu68s_mQL53PQ" name="startup" visibility="public" concurrency="concurrent" raisedException="_bvOcMIc_Edu68s_mQL53PQ"/>
+    <ownedOperation xmi:id="_bv-qJIc_Edu68s_mQL53PQ" name="AbstractUIPlugin" visibility="public" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_bwH0EIc_Edu68s_mQL53PQ" name="AbstractUIPlugin" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_bwH0Eoc_Edu68s_mQL53PQ" name="descriptor" type="_bwH0EYc_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bhhXYoc_Edu68s_mQL53PQ" name="org.osgi.framework">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_bhrIYIc_Edu68s_mQL53PQ" name="BundleContext" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_buL6Y4c_Edu68s_mQL53PQ" name="BundleListener" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_bhrIYIc_Edu68s_mQL53PQ" name="BundleContext" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_bqBMEoc_Edu68s_mQL53PQ" name="IProvider" isAbstract="true">
+    <generalization xmi:id="_9ZySUIc_Edu68s_mQL53PQ" general="_bqBMEIc_Edu68s_mQL53PQ"/>
+    <ownedOperation xmi:id="_9aYvQIc_Edu68s_mQL53PQ" name="addProviderChangeListener" visibility="public" isAbstract="true" concurrency="concurrent">
+      <ownedParameter xmi:id="_9aYvQYc_Edu68s_mQL53PQ" name="listener" type="_bcdRMIc_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_9aYvQoc_Edu68s_mQL53PQ" name="removeProviderChangeListener" visibility="public" isAbstract="true" concurrency="concurrent">
+      <ownedParameter xmi:id="_9aYvQ4c_Edu68s_mQL53PQ" name="listener" type="_bcdRMIc_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_9aYvRIc_Edu68s_mQL53PQ" name="provides" visibility="public" isAbstract="true" concurrency="concurrent">
+      <ownedParameter xmi:id="_9aYvRYc_Edu68s_mQL53PQ" name="operation" type="_bcmbI4c_Edu68s_mQL53PQ"/>
+      <ownedParameter xmi:id="_9ah5MIc_Edu68s_mQL53PQ" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bqdQ8Ic_Edu68s_mQL53PQ" name="org.eclipse.core.runtime">
+    <packagedElement xmi:type="uml:Class" xmi:id="_bqdQ8Yc_Edu68s_mQL53PQ" name="Plugin" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bvOcMIc_Edu68s_mQL53PQ" name="CoreException"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_bv-qIIc_Edu68s_mQL53PQ" name="IPath" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_bwH0EYc_Edu68s_mQL53PQ" name="IPluginDescriptor" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bqdQ8Yc_Edu68s_mQL53PQ" name="Plugin" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bt4_cYc_Edu68s_mQL53PQ" name="org.eclipse.jface.resource">
+    <packagedElement xmi:type="uml:Class" xmi:id="_bt4_coc_Edu68s_mQL53PQ" name="ImageRegistry"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_buyXU4c_Edu68s_mQL53PQ" name="ImageDescriptor" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bt4_coc_Edu68s_mQL53PQ" name="ImageRegistry"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_buCJYIc_Edu68s_mQL53PQ" name="org.eclipse.jface.dialogs">
+    <packagedElement xmi:type="uml:Class" xmi:id="_buCJYYc_Edu68s_mQL53PQ" name="DialogSettings"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_bvFSQIc_Edu68s_mQL53PQ" name="IDialogSettings" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_buCJYYc_Edu68s_mQL53PQ" name="DialogSettings"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_buCJY4c_Edu68s_mQL53PQ" name="org.eclipse.ui.preferences">
+    <packagedElement xmi:type="uml:Class" xmi:id="_buL6YIc_Edu68s_mQL53PQ" name="ScopedPreferenceStore"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_buL6YIc_Edu68s_mQL53PQ" name="ScopedPreferenceStore"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_buL6Y4c_Edu68s_mQL53PQ" name="BundleListener" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_buVrYYc_Edu68s_mQL53PQ" name="org.eclipse.ui">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_buVrYoc_Edu68s_mQL53PQ" name="IWorkbench" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_buVrYoc_Edu68s_mQL53PQ" name="IWorkbench" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bue1UIc_Edu68s_mQL53PQ" name="org.eclipse.jface.preference">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_bue1UYc_Edu68s_mQL53PQ" name="IPreferenceStore" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_bue1UYc_Edu68s_mQL53PQ" name="IPreferenceStore" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_buyXU4c_Edu68s_mQL53PQ" name="ImageDescriptor" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_bvFSQIc_Edu68s_mQL53PQ" name="IDialogSettings" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bvOcMIc_Edu68s_mQL53PQ" name="CoreException"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_bv-qIIc_Edu68s_mQL53PQ" name="IPath" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_bwH0EYc_Edu68s_mQL53PQ" name="IPluginDescriptor" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_63PnoIdAEdu68s_mQL53PQ" name="AbstractDecorator" isAbstract="true">
+    <generalization xmi:id="_63ZYoIdAEdu68s_mQL53PQ" general="_bqBMEIc_Edu68s_mQL53PQ"/>
+    <generalization xmi:id="_63ZYoodAEdu68s_mQL53PQ" general="_63ZYoYdAEdu68s_mQL53PQ"/>
+    <ownedAttribute xmi:id="_632EkIdAEdu68s_mQL53PQ" name="decoration" visibility="private" type="_632EkodAEdu68s_mQL53PQ"/>
+    <ownedAttribute xmi:id="_632Ek4dAEdu68s_mQL53PQ" name="decoratorTarget" visibility="private" type="_64I_godAEdu68s_mQL53PQ"/>
+    <ownedOperation xmi:id="_64I_g4dAEdu68s_mQL53PQ" name="removeDecoration" visibility="protected" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_64SwgIdAEdu68s_mQL53PQ" name="getDecoratorTarget" visibility="protected" concurrency="concurrent">
+      <ownedParameter xmi:id="_64SwgYdAEdu68s_mQL53PQ" type="_64I_godAEdu68s_mQL53PQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_64SwgodAEdu68s_mQL53PQ" name="deactivate" visibility="public" concurrency="concurrent"/>
+    <ownedOperation xmi:id="_64b6cIdAEdu68s_mQL53PQ" name="getDecoration" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_64b6cYdAEdu68s_mQL53PQ" type="_632EkodAEdu68s_mQL53PQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_64b6codAEdu68s_mQL53PQ" name="setDecoration" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_64lrcYdAEdu68s_mQL53PQ" name="decoration" type="_64lrcIdAEdu68s_mQL53PQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_64lrcodAEdu68s_mQL53PQ" name="AbstractDecorator" visibility="public" concurrency="concurrent">
+      <ownedParameter xmi:id="_64lrc4dAEdu68s_mQL53PQ" name="decoratorTarget" type="_bcwMI4c_Edu68s_mQL53PQ"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_63ZYoYdAEdu68s_mQL53PQ" name="IDecorator" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_632EkYdAEdu68s_mQL53PQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.services.decorator">
+    <packagedElement xmi:type="uml:Class" xmi:id="_632EkodAEdu68s_mQL53PQ" name="Decoration"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_632EkodAEdu68s_mQL53PQ" name="Decoration"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_64I_gIdAEdu68s_mQL53PQ" name="org.eclipse.gmf.runtime.diagram.ui.editpolicies">
+    <packagedElement xmi:type="uml:Class" xmi:id="_64I_gYdAEdu68s_mQL53PQ" name="DecorationEditPolicy">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_64I_godAEdu68s_mQL53PQ" name="DecoratorTarget"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_64I_gYdAEdu68s_mQL53PQ" name="DecorationEditPolicy">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_64I_godAEdu68s_mQL53PQ" name="DecoratorTarget"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_64lrcIdAEdu68s_mQL53PQ" name="IDecoration" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bhXmYIc_Edu68s_mQL53PQ" name="java.lang">
+    <packagedElement xmi:type="uml:Class" xmi:id="_bhXmYoc_Edu68s_mQL53PQ" name="String" isLeaf="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bh0SUIc_Edu68s_mQL53PQ" name="Exception"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bqBMEIc_Edu68s_mQL53PQ" name="Object"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_bdyt8Ic_Edu68s_mQL53PQ" supplier="_bcmbI4c_Edu68s_mQL53PQ" client="_bcAlQIc_Edu68s_mQL53PQ _bcAlQIc_Edu68s_mQL53PQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_beGP8Yc_Edu68s_mQL53PQ" supplier="_bcwMI4c_Edu68s_mQL53PQ" client="_bcAlQIc_Edu68s_mQL53PQ _bcAlQIc_Edu68s_mQL53PQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_beZK4Yc_Edu68s_mQL53PQ" supplier="_bcdRMIc_Edu68s_mQL53PQ" client="_bcAlQIc_Edu68s_mQL53PQ _bcAlQIc_Edu68s_mQL53PQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_bitqMIc_Edu68s_mQL53PQ" supplier="_bhXmYoc_Edu68s_mQL53PQ" client="_bgxwgIc_Edu68s_mQL53PQ _bgxwgIc_Edu68s_mQL53PQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_bitqM4c_Edu68s_mQL53PQ" supplier="_bhrIYIc_Edu68s_mQL53PQ" client="_bgxwgIc_Edu68s_mQL53PQ _bgxwgIc_Edu68s_mQL53PQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_bi3bMoc_Edu68s_mQL53PQ" supplier="_bh0SUIc_Edu68s_mQL53PQ" client="_bgxwgIc_Edu68s_mQL53PQ _bgxwgIc_Edu68s_mQL53PQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_bjKWIYc_Edu68s_mQL53PQ" supplier="_bh0SUIc_Edu68s_mQL53PQ" client="_bgxwgIc_Edu68s_mQL53PQ _bgxwgIc_Edu68s_mQL53PQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_LxhXcIdBEdu68s_mQL53PQ" supplier="_bcwMI4c_Edu68s_mQL53PQ" client="_ZqKNIIc_Edu68s_mQL53PQ _ZqKNIIc_Edu68s_mQL53PQ"/>
+</uml:Model>

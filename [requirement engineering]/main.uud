@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:UseCaseDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="main" size="990,596" metadata="uml2-1.0" initialized="true" tag="1000" key="32303034313032362053687574746C655F2045636C697073657370696C63652F54696D6D79">
+  <children xsi:type="editmodel:SystemEditModel" location="520,157" size="162,314" itemName="Shuttle: Eclipsespilce">
+    <children xsi:type="editmodel:UseCaseEditModel" targetConnections="//@children.3/@sourceConnections.2" location="28,122" size="102,34" description="" itemName="create UML 2.0 model" alternativeFlows="{}" normalFlow="" postCondition="" preCondition="" rank=""/>
+    <children xsi:type="editmodel:UseCaseEditModel" targetConnections="//@children.3/@sourceConnections.1" location="28,179" size="102,34" description="" itemName="modify UML 2.0 model" alternativeFlows="{}" normalFlow="" postCondition="" preCondition="" rank=""/>
+    <children xsi:type="editmodel:UseCaseEditModel" targetConnections="//@children.3/@sourceConnections.3" location="17,240" size="125,34" description="" itemName="sense UML 2.0 model modified" alternativeFlows="{}" normalFlow="" postCondition="" preCondition="" rank=""/>
+    <children xsi:type="editmodel:UseCaseEditModel" location="55,45" size="162,34" description="" itemName="bind model-ontology manually" alternativeFlows="{}" normalFlow="" postCondition="" preCondition="" rank=""/>
+  </children>
+  <children xsi:type="editmodel:UseCaseActorEditModel" targetConnections="//@children.2/@sourceConnections.0" location="142,250" size="112,128" stereotype="" itemName="modelling assistant"/>
+  <children xsi:type="editmodel:UseCaseActorEditModel" targetConnections="//@children.3/@sourceConnections.0" location="130,430" size="136,128" stereotype="" itemName="UML modelling assistant">
+    <sourceConnections xsi:type="editmodel:UseCaseGeneralizationEditModel" source="//@children.2" target="//@children.1" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manual" autoLocated="true">
+      <children xsi:type="editmodel:UseCaseEndEditModel" location="68,0" attachSource="true"/>
+      <children xsi:type="editmodel:UseCaseEndEditModel" location="56,128"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:UseCaseActorEditModel" location="352,430" size="104,128" stereotype="" itemName="Eclipse UML2 API">
+    <sourceConnections xsi:type="editmodel:UseCaseGeneralizationEditModel" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manual" autoLocated="true">
+      <children xsi:type="editmodel:UseCaseEndEditModel" location="0,64" attachSource="true"/>
+      <children xsi:type="editmodel:UseCaseEndEditModel" location="136,64"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:UseCaseAssociationEditModel" source="//@children.3" target="//@children.0/@children.1" targetEnd="//@children.3/@sourceConnections.1/@children.1" sourceEnd="//@children.3/@sourceConnections.1/@children.0" connectionRouterKind="Manual" autoLocated="true">
+      <children xsi:type="editmodel:UseCaseEndEditModel" location="104,26" attachSource="true"/>
+      <children xsi:type="editmodel:UseCaseEndEditModel" location="27,34"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:UseCaseAssociationEditModel" source="//@children.3" target="//@children.0/@children.0" targetEnd="//@children.3/@sourceConnections.2/@children.1" sourceEnd="//@children.3/@sourceConnections.2/@children.0" connectionRouterKind="Manual" autoLocated="true">
+      <children xsi:type="editmodel:UseCaseEndEditModel" location="104,11" attachSource="true"/>
+      <children xsi:type="editmodel:UseCaseEndEditModel" location="34,34"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:UseCaseAssociationEditModel" source="//@children.3" target="//@children.0/@children.2" targetEnd="//@children.3/@sourceConnections.3/@children.1" sourceEnd="//@children.3/@sourceConnections.3/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:UseCaseEndEditModel" location="104,48" attachSource="true"/>
+      <children xsi:type="editmodel:UseCaseEndEditModel" location="0,16"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:UseCaseEditModel" location="736,170" size="102,34" description="" itemName="bind model-ontology" alternativeFlows="{}" normalFlow="" postCondition="" preCondition="" rank=""/>
+  <children xsi:type="editmodel:UseCaseEditModel" location="736,297" size="149,34" description="" itemName="inference PIM+PDM to PDM" alternativeFlows="{}" normalFlow="" postCondition="" preCondition="" rank=""/>
+  <children xsi:type="editmodel:UseCaseEditModel" location="736,356" size="149,34" description="" itemName="inference PDM to PIM+PDM" alternativeFlows="{}" normalFlow="" postCondition="" preCondition="" rank=""/>
+  <children xsi:type="editmodel:UseCaseEditModel" location="733,217" size="155,34" description="" itemName="multi-classify model element" alternativeFlows="{}" normalFlow="" postCondition="" preCondition="" rank=""/>
+  <children xsi:type="editmodel:ResourceLinkEditModel" name="Shuttle use case" foregroundRGB="0,0,255" location="147,235" size="101,16" url="\Shuttle\[requirement engineering]\main.uud"/>
+  <diagramOptions xsi:type="options:UseCaseDiagramOptions" level="0" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="10,10" gridOrigin="0,0" rulerUnit="pixel">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+</editmodel:UseCaseDiagramEditModel>

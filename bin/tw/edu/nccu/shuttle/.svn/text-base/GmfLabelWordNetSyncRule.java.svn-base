@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package tw.edu.nccu.shuttle.sandbox;
+
+import java.util.HashSet;
+import java.util.Set;
+
+/**
+ * @author Kao, Chen-yi
+ *
+ */
+public class GmfLabelWordNetSyncRule extends GmfLabelSyncRule {
+
+	public GmfLabelWordNetSyncRule() {
+		super();
+		// TODO: for temporary demo, 
+		//	Such a rule SHOULD trigger and split.
+		triggers.add(new GmfLabelSyncTrigger());
+		recommenders.add(new GmfLabelSyncRecommender(this));
+	}
+
+}

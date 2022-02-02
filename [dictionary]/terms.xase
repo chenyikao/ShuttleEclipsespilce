@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="big5"?>
+<!DOCTYPE xase>
+
+<xase xmlns="http://plum.cs.nccu.edu.tw/~s8605/XASE"
+      xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xsi:schemaLocation
+       ="http://plum.cs.nccu.edu.tw/~s8605/XASE http://plum.cs.nccu.edu.tw/~s8605/XASE/xase1_0_a4.schema"
+      xml:lang="en">
+
+
+<dataDictionary >
+
+  <entry id="En-IASE" >
+    <ref xlink:type="simple" xlink:href="../_dictionary/IASE/terms.xase#En-IASE" />
+  </entry>
+
+</dataDictionary>
+
+</xase>

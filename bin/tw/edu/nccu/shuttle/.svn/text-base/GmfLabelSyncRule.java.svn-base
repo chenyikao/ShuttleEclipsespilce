@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package tw.edu.nccu.shuttle.sandbox;
+
+import java.util.Set;
+
+/**
+ * @author Kao, Chen-yi
+ *
+ */
+public abstract class GmfLabelSyncRule extends Rule {
+
+}

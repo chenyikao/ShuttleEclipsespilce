@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package tw.edu.nccu.shuttle.sandbox;
+
+import org.eclipse.core.runtime.IAdaptable;
+
+/**
+ * @author Kao, Chen-yi
+ *
+ */
+public class GmfLabelSyncRecommender extends RuleRecommender {
+
+	public GmfLabelSyncRecommender(Rule host) {
+		super(host);
+		// TODO Auto-generated constructor stub
+	}
+
+	protected void hookIntoCacheSolved(IAdaptable mpmeAdaptable) {
+		// TODO Auto-generated method stub
+
+	}
+
+	protected boolean isHookableIntoCacheSolved(IAdaptable mpmeAdaptable) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

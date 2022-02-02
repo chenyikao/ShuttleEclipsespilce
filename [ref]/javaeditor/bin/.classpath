@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse-modeling-galileo/plugins/org.eclipse.jface_3.5.1.M20090826-0800.jar" sourcepath="C:/Program Files/eclipse-modeling-galileo/plugins/org.eclipse.jface.source_3.5.1.M20090826-0800.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Program%20Files/eclipse-modeling-galileo/plugins/org.eclipse.platform.doc.isv_3.5.1.r351_v20090831.jar!/reference/api"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/action/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/action/images/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/bindings/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/bindings/keys/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/bindings/keys/formatting/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/commands/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/contexts/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/dialogs/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/dialogs/images/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/fieldassist/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/fieldassist/images/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/images/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/jface/internal/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/jface/internal/provisional/action/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/layout/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/menus/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/operation/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/preference/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/preference/images/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/resource/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/util/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/viewers/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/viewers/deferred/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/window/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/wizard/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/wizard/images/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse-modeling-galileo/plugins/org.eclipse.swt.win32.win32.x86_3.5.1.v3555a.jar" sourcepath="C:/Program Files/eclipse-modeling-galileo/plugins/org.eclipse.swt.win32.win32.x86.source_3.5.1.v3555a.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Program%20Files/eclipse-modeling-galileo/plugins/org.eclipse.platform.doc.isv_3.5.1.r351_v20090831.jar!/reference/api"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/swt/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/swt/accessibility/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/swt/awt/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/swt/browser/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/swt/custom/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/swt/dnd/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/swt/events/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/swt/graphics/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/swt/layout/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/swt/opengl/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/swt/printing/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/swt/program/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/swt/widgets/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/swt/internal/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/swt/internal/image/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/swt/internal/theme/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/swt/ole/win32/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/swt/internal/gdip/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/swt/internal/ole/win32/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/swt/internal/win32/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/swt/internal/opengl/win32/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse-modeling-galileo/plugins/org.eclipse.jface.text_3.5.1.r351_v20090708-0800.jar" sourcepath="C:/Program Files/eclipse-modeling-galileo/plugins/org.eclipse.jface.text.source_3.5.1.r351_v20090708-0800.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Program%20Files/eclipse-modeling-galileo/plugins/org.eclipse.platform.doc.isv_3.5.1.r351_v20090831.jar!/reference/api"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/contentassist/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/contentassist/images/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/jface/internal/text/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/jface/internal/text/html/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/jface/internal/text/link/contentassist/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/jface/internal/text/revisions/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/jface/internal/text/source/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/contentassist/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/formatter/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/hyperlink/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/information/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/link/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/presentation/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/quickassist/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/reconciler/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/revisions/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/rules/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/source/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/source/projection/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/source/projection/images/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/templates/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/templates/persistence/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse-modeling-galileo/plugins/org.eclipse.ui.views_3.4.1.M20090826-0800.jar" sourcepath="C:/Program Files/eclipse-modeling-galileo/plugins/org.eclipse.ui.views.source_3.4.1.M20090826-0800.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Program%20Files/eclipse-modeling-galileo/plugins/org.eclipse.platform.doc.isv_3.5.1.r351_v20090831.jar!/reference/api"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/views/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/views/contentoutline/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/views/properties/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/views/contentoutline/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/views/properties/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse-modeling-galileo/plugins/org.eclipse.ui.workbench.texteditor_3.5.0.v20090603.jar" sourcepath="C:/Program Files/eclipse-modeling-galileo/plugins/org.eclipse.ui.workbench.texteditor.source_3.5.0.v20090603.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Program%20Files/eclipse-modeling-galileo/plugins/org.eclipse.platform.doc.isv_3.5.1.r351_v20090831.jar!/reference/api"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/contentassist/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/texteditor/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/texteditor/quickdiff/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/texteditor/quickdiff/compare/equivalence/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/texteditor/rulers/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/ui/internal/texteditor/spelling/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/texteditor/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/texteditor/link/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/texteditor/quickdiff/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/texteditor/rulers/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/texteditor/spelling/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/ui/texteditor/templates/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse-modeling-galileo/plugins/org.eclipse.text_3.5.0.v20090513-2000.jar" sourcepath="C:/Program Files/eclipse-modeling-galileo/plugins/org.eclipse.text.source_3.5.0.v20090513-2000.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Program%20Files/eclipse-modeling-galileo/plugins/org.eclipse.platform.doc.isv_3.5.1.r351_v20090831.jar!/reference/api"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/link/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/projection/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/source/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/jface/text/templates/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/text/edits/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/text/undo/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

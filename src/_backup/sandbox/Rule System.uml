@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_Mo-e4Vw4Ed27wJe0mFWRzw" name="Rule System">
+  <elementImport xmi:id="_M1WG8Fw4Ed27wJe0mFWRzw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_M2ZP0Fw4Ed27wJe0mFWRzw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_M2ZP0Vw4Ed27wJe0mFWRzw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_M2ZP0lw4Ed27wJe0mFWRzw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_bpxfYFxKEd2TJIy7pBmgmw" alias="WordNet">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
+  </elementImport>
+  <elementImport xmi:id="_XhCdgFxMEd2TJIy7pBmgmw" alias="WordNet">
+    <importedElement xmi:type="uml:Stereotype" href="pathmap://UML_PROFILES/Standard.profile.uml#Library"/>
+  </elementImport>
+  <elementImport xmi:id="_l6U9oFxUEd2TJIy7pBmgmw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HLtZYFxCEd27wJe0mFWRzw" name="Rule">
+    <ownedOperation xmi:id="_QyYYsFxCEd27wJe0mFWRzw" name="recommendApplication">
+      <ownedParameter xmi:id="_TgSJYFxCEd27wJe0mFWRzw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_baBs0FxCEd27wJe0mFWRzw" name="apply" visibility="public">
+      <ownedParameter xmi:id="_cYdrAFxCEd27wJe0mFWRzw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_LxYnMFxGEd27wJe0mFWRzw" name="recommendApplication_operation_name">
+    <classifier xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_0PFvoFxHEd27wJe0mFWRzw" name="apply_operation_name">
+    <classifier xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_ZCXqMFxIEd27wJe0mFWRzw" name="application" classifier="_xaL2sFxVEd2TJIy7pBmgmw"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_93vdMFxNEd2TJIy7pBmgmw" name="MIT Java WordNet Interface">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xaL2sFxVEd2TJIy7pBmgmw" name="IndexWord"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_w-zFwFxWEd2TJIy7pBmgmw" name="Synset"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_6KMeUFxWEd2TJIy7pBmgmw" name="apply" classifier="_w-zFwFxWEd2TJIy7pBmgmw"/>
+</uml:Package>

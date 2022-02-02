@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+		id="ShuttleRecommendationHintDecoratorProvider"
+        name="Shuttle Recommendation Hint Decorator Provider"
+        point="org.eclipse.gmf.runtime.diagram.ui.decoratorProviders">
+      <decoratorProvider class="tw.edu.nccu.shuttle.sandbox.RecommendationHintDecoratorProvider">
+         <Priority name="Medium"/>
+         <!-- check TextCompartmentEditPart & SyncSet conditions if needed -->
+      </decoratorProvider>
+   </extension>
+   <!--
+   <extension
+         point="org.eclipse.ui.decorators">
+      <decorator
+            adaptable="true"
+            icon="icons/geoshape.gif"
+            id="edu.nccu.eclipsespilce.GMFIntegrationDemo2.RecommendationHint"
+            label="Recommendation Hint"
+            lightweight="true"
+            state="true">
+      </decorator>
+      <decorator
+            adaptable="true"
+            icon="icons/sample_decorator.gif"
+            id="edu.nccu.eclipsespilce.GMFIntegrationDemo2.decorator"
+            label="Resource Decorator"
+            lightweight="true"
+            location="BOTTOM_RIGHT"
+            state="true">
+         <enablement>
+            <and>
+               <objectClass name="org.eclipse.core.resources.IResource"/>
+               <or>
+                  <objectClass name="org.eclipse.core.resources.IProject"/>
+                  <objectClass name="org.eclipse.core.resources.IFile"/>
+               </or>
+            </and>
+         </enablement>
+      </decorator>
+   </extension>
+   -->
+
+</plugin>

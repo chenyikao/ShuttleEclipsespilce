@@ -1,0 +1,53 @@
+package tw.edu.nccu.shuttle.sandbox;
+
+import org.eclipse.gmf.runtime.diagram.ui.services.decorator.IDecoratorTarget;
+import org.eclipse.gmf.runtime.diagram.ui.services.decorator.AbstractDecorator;
+import org.eclipse.swt.graphics.Image;
+
+public class RecommendationHintDecorator extends AbstractDecorator {
+
+	private static final String RECOMMENDATION_HINT_ID = "tw.edu.nccu.shuttle.GMFIntegrationDemo2.RecommendationHint";
+
+	static private Image recommendationHint = null;
+
+	/**
+	 * @param decoratorTarget
+	 */
+	public RecommendationHintDecorator(IDecoratorTarget decoratorTarget) {
+		super(decoratorTarget);
+
+		/*
+		 * TODO: replace temporary demo image
+		 * 
+		 * When an icon is used frequently to display items in a particular
+		 * viewer, it can be shared among similar items in the viewer using a
+		 * Label Provider.
+		 * 
+		 * Hence to take the advantage of Label Provider: register Decorator to
+		 * Label Provider -> register Label Provider to Diagram Editor
+		 * 
+		 * The GMF Presentation Decorator Providers Extension Point should have
+		 * already done this for us! So we just care for utilizing the plug-in
+		 * Image Registry.
+		 */
+		if (recommendationHint == null) {
+			recommendationHint = System.imageDescriptorFromPlugin(
+					System.PLUGIN_ID, "icons/geoshape.gif").createImage();
+			System.getDefault().getImageRegistry().put(
+					RECOMMENDATION_HINT_ID, recommendationHint);
+		}
+	}
+
+	public void activate() {
+		// TODO: the shape decoration volatility can be left as a preference
+		getDecoratorTarget().addShapeDecoration(recommendationHint,
+				IDecoratorTarget.Direction.SOUTH_EAST, -1, true);
+
+	}
+
+	public void refresh() {
+		activate();
+
+	}
+
+}

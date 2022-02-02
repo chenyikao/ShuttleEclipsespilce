@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_M_COcFw4Ed27wJe0mFWRzw" type="UMLClass" name="Rule System.umlclass" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_RN730Fw4Ed27wJe0mFWRzw" type="2014">
+    <children xmi:type="notation:Node" xmi:id="_RN7301w4Ed27wJe0mFWRzw" type="5020"/>
+    <children xmi:type="notation:Node" xmi:id="_ROOywFw4Ed27wJe0mFWRzw" type="7032">
+      <children xmi:type="notation:Node" xmi:id="_bsv64FxKEd2TJIy7pBmgmw" type="3031">
+        <element xmi:type="uml:ElementImport" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_bpxfYFxKEd2TJIy7pBmgmw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bsv64VxKEd2TJIy7pBmgmw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_XhMOgFxMEd2TJIy7pBmgmw" type="3031">
+        <element xmi:type="uml:ElementImport" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_XhCdgFxMEd2TJIy7pBmgmw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_XhMOgVxMEd2TJIy7pBmgmw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_l6euoFxUEd2TJIy7pBmgmw" type="3031">
+        <element xmi:type="uml:ElementImport" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_l6U9oFxUEd2TJIy7pBmgmw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_l6euoVxUEd2TJIy7pBmgmw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_ROOywVw4Ed27wJe0mFWRzw" collapsed="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ROOywlw4Ed27wJe0mFWRzw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ROOyw1w4Ed27wJe0mFWRzw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_RN730Vw4Ed27wJe0mFWRzw" fontName="新細明體"/>
+    <element xmi:type="uml:Package" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_Mo-e4Vw4Ed27wJe0mFWRzw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RN730lw4Ed27wJe0mFWRzw"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Hg3xEFxCEd27wJe0mFWRzw" type="2001">
+    <children xmi:type="notation:Node" xmi:id="_HhA7AFxCEd27wJe0mFWRzw" type="5003">
+      <styles xmi:type="notation:FontStyle" xmi:id="_Hj2MkFxCEd27wJe0mFWRzw" bold="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_HhA7AVxCEd27wJe0mFWRzw" type="5019"/>
+    <children xmi:type="notation:Node" xmi:id="_HhUdAFxCEd27wJe0mFWRzw" type="7001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_HhUdAVxCEd27wJe0mFWRzw"/>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_HhUdAlxCEd27wJe0mFWRzw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_HhUdA1xCEd27wJe0mFWRzw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_HhUdBFxCEd27wJe0mFWRzw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Hhdm8FxCEd27wJe0mFWRzw" type="7002">
+      <children xmi:type="notation:Node" xmi:id="_QzH_kFxCEd27wJe0mFWRzw" type="3002">
+        <element xmi:type="uml:Operation" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_QyYYsFxCEd27wJe0mFWRzw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_QzH_kVxCEd27wJe0mFWRzw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_banisFxCEd27wJe0mFWRzw" type="3002">
+        <element xmi:type="uml:Operation" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_baBs0FxCEd27wJe0mFWRzw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_banisVxCEd27wJe0mFWRzw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_Hhdm8VxCEd27wJe0mFWRzw"/>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_Hhdm8lxCEd27wJe0mFWRzw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Hhdm81xCEd27wJe0mFWRzw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Hhdm9FxCEd27wJe0mFWRzw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Hhdm9VxCEd27wJe0mFWRzw" type="7003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_Hhdm9lxCEd27wJe0mFWRzw"/>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_Hhdm91xCEd27wJe0mFWRzw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Hhdm-FxCEd27wJe0mFWRzw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Hhdm-VxCEd27wJe0mFWRzw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Hg3xEVxCEd27wJe0mFWRzw" fontName="新細明體"/>
+    <element xmi:type="uml:Class" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_HLtZYFxCEd27wJe0mFWRzw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hg3xElxCEd27wJe0mFWRzw" x="140" y="25"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Lx_EIFxGEd27wJe0mFWRzw" type="2008">
+    <children xmi:type="notation:Node" xmi:id="_Lx_EI1xGEd27wJe0mFWRzw" type="5010">
+      <styles xmi:type="notation:FontStyle" xmi:id="_Lx_EJFxGEd27wJe0mFWRzw" fontName="新細明體" underline="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Lx_EJVxGEd27wJe0mFWRzw" type="7028">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_LyIOEFxGEd27wJe0mFWRzw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_LyIOEVxGEd27wJe0mFWRzw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_LyIOElxGEd27wJe0mFWRzw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Lx_EIVxGEd27wJe0mFWRzw" fontName="新細明體"/>
+    <element xmi:type="uml:InstanceSpecification" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_LxYnMFxGEd27wJe0mFWRzw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lx_EIlxGEd27wJe0mFWRzw" x="45" y="190"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_0PPgoFxHEd27wJe0mFWRzw" type="2008">
+    <children xmi:type="notation:Node" xmi:id="_0PPgoVxHEd27wJe0mFWRzw" type="5010">
+      <styles xmi:type="notation:FontStyle" xmi:id="_0PPgolxHEd27wJe0mFWRzw" fontName="新細明體" underline="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_0PPgo1xHEd27wJe0mFWRzw" type="7028">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_0PPgpFxHEd27wJe0mFWRzw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_0PPgpVxHEd27wJe0mFWRzw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_0PPgplxHEd27wJe0mFWRzw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_0PPgp1xHEd27wJe0mFWRzw" fontName="新細明體"/>
+    <element xmi:type="uml:InstanceSpecification" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_0PFvoFxHEd27wJe0mFWRzw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0PPgqFxHEd27wJe0mFWRzw" x="45" y="260"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_ZChbMFxIEd27wJe0mFWRzw" type="2008">
+    <children xmi:type="notation:Node" xmi:id="_ZChbMVxIEd27wJe0mFWRzw" type="5010">
+      <styles xmi:type="notation:FontStyle" xmi:id="_ZChbMlxIEd27wJe0mFWRzw" fontName="新細明體" underline="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_ZChbM1xIEd27wJe0mFWRzw" type="7028">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_ZChbNFxIEd27wJe0mFWRzw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ZChbNVxIEd27wJe0mFWRzw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ZChbNlxIEd27wJe0mFWRzw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_ZChbN1xIEd27wJe0mFWRzw" fontName="新細明體"/>
+    <element xmi:type="uml:InstanceSpecification" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_ZCXqMFxIEd27wJe0mFWRzw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZChbOFxIEd27wJe0mFWRzw" x="440" y="190"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_94o1EFxNEd2TJIy7pBmgmw" type="2002">
+    <children xmi:type="notation:Node" xmi:id="_94o1FFxNEd2TJIy7pBmgmw" type="5004"/>
+    <children xmi:type="notation:Node" xmi:id="_94o1FVxNEd2TJIy7pBmgmw" type="7010">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_94o1FlxNEd2TJIy7pBmgmw"/>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_94o1F1xNEd2TJIy7pBmgmw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_94o1GFxNEd2TJIy7pBmgmw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_94o1GVxNEd2TJIy7pBmgmw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_94o1GlxNEd2TJIy7pBmgmw" type="7011">
+      <children xmi:type="notation:Node" xmi:id="_xa7dkFxVEd2TJIy7pBmgmw" type="3007">
+        <element xmi:type="uml:Class" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_xaL2sFxVEd2TJIy7pBmgmw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xa7dkVxVEd2TJIy7pBmgmw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_w_isoFxWEd2TJIy7pBmgmw" type="3041">
+        <element xmi:type="uml:Interface" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_w-zFwFxWEd2TJIy7pBmgmw"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_w_isoVxWEd2TJIy7pBmgmw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_94o1G1xNEd2TJIy7pBmgmw"/>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_94o1HFxNEd2TJIy7pBmgmw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_94o1HVxNEd2TJIy7pBmgmw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_94o1HlxNEd2TJIy7pBmgmw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_94o1H1xNEd2TJIy7pBmgmw" type="7012">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_94o1IFxNEd2TJIy7pBmgmw"/>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_94o1IVxNEd2TJIy7pBmgmw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_94o1IlxNEd2TJIy7pBmgmw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_94o1I1xNEd2TJIy7pBmgmw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_94o1EVxNEd2TJIy7pBmgmw" fontName="新細明體"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_94o1ElxNEd2TJIy7pBmgmw"/>
+    <element xmi:type="uml:Package" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_93vdMFxNEd2TJIy7pBmgmw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_94o1E1xNEd2TJIy7pBmgmw" x="620" y="15"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_6KpKQFxWEd2TJIy7pBmgmw" type="2008">
+    <children xmi:type="notation:Node" xmi:id="_6KpKQVxWEd2TJIy7pBmgmw" type="5010">
+      <styles xmi:type="notation:FontStyle" xmi:id="_6KpKQlxWEd2TJIy7pBmgmw" fontName="新細明體" underline="true"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_6KpKQ1xWEd2TJIy7pBmgmw" type="7028">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_6KpKRFxWEd2TJIy7pBmgmw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_6KpKRVxWEd2TJIy7pBmgmw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_6KpKRlxWEd2TJIy7pBmgmw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_6KpKR1xWEd2TJIy7pBmgmw" fontName="新細明體"/>
+    <element xmi:type="uml:InstanceSpecification" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_6KMeUFxWEd2TJIy7pBmgmw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6KpKSFxWEd2TJIy7pBmgmw" x="440" y="265"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_M_COcVw4Ed27wJe0mFWRzw"/>
+  <styles xmi:type="notation:FilteringStyle" xmi:id="_M_COclw4Ed27wJe0mFWRzw"/>
+  <element xmi:type="uml:Package" href="../tw/edu/nccu/shuttle/sandbox/Rule System.uml#_Mo-e4Vw4Ed27wJe0mFWRzw"/>
+</notation:Diagram>

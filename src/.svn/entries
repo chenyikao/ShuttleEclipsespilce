@@ -1,0 +1,40 @@
+8
+
+dir
+3
+svn://soap.cs.nccu.edu.tw/projects/shuttle/trunk/src
+svn://soap.cs.nccu.edu.tw/projects/shuttle
+
+
+
+2007-03-22T09:44:00.997445Z
+3
+wta
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fdcd09e6-0b7b-4646-a5a0-e6adb4aadda8
+
+_backup
+dir
+
+edu
+dir
+
+model
+dir
+
+tw
+dir
+

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Shuttle
+Bundle-SymbolicName: tw.edu.nccu.shuttle;singleton:=true
+Bundle-Version: 0.1.0.alpha
+Bundle-Activator: tw.edu.nccu.shuttle.sandbox.System
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.gmf.runtime.diagram.ui
+Eclipse-LazyStart: true
+Bundle-Vendor: Kao, Chen-yi
+Bundle-ClassPath: .,
+ JWI/edu.mit.jwi_1.1.1.jar

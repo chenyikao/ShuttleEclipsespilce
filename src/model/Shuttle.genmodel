@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Eclipsespilce GMF integration 2/src"
+    modelPluginID="EclipsespilceGMFintegration2" modelName="Shuttle" importerID="org.eclipse.emf.importer.java">
+  <foreignModel>@model</foreignModel>
+  <genPackages prefix="Sandbox" basePackage="edu.nccu.shuttle" disposableProviderFactory="true"
+      ecorePackage="sandbox.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="sandbox.ecore#//Rule">
+      <genEnumLiterals ecoreEnumLiteral="sandbox.ecore#//Rule/recommenders"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="sandbox.ecore#//RuleRecommender">
+      <genEnumLiterals ecoreEnumLiteral="sandbox.ecore#//RuleRecommender/SupportedMPMESelections"/>
+      <genEnumLiterals ecoreEnumLiteral="sandbox.ecore#//RuleRecommender/host"/>
+      <genEnumLiterals ecoreEnumLiteral="sandbox.ecore#//RuleRecommender/anchorMPMEs"/>
+      <genEnumLiterals ecoreEnumLiteral="sandbox.ecore#//RuleRecommender/recommendation"/>
+    </genEnums>
+  </genPackages>
+</genmodel:GenModel>

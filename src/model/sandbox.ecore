@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="sandbox"
+    nsURI="http:///tw/edu/nccu/shuttle/sandbox.ecore" nsPrefix="tw.edu.nccu.shuttle.sandbox">
+  <eClassifiers xsi:type="ecore:EClass" name="Model SyncRule" interface="true">
+    <eOperations name="trigger"/>
+    <eOperations name="match"/>
+    <eOperations name="apply"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="recommenders" upperBound="-1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="triggers" upperBound="-1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="antecedent"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="consequent"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="triggers" upperBound="-1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="recommenders" upperBound="-1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rule Recommender" interface="true">
+    <eOperations name="recommendMatch"/>
+    <eOperations name="recommendApplication"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="host" lowerBound="1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="antecedent MP ME selection"
+        eType="#//MPMESelection"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consequent MP ME selection"
+        eType="#//MPMESelection"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hosts" lowerBound="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Conceptionary" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="superior Conceptionaries"
+        upperBound="-1" eType="#//Conceptionary"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inferior Conceptionaries"
+        upperBound="-1" eType="#//Conceptionary"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="concepts" upperBound="-1"
+        eType="#//ConceptSyncSet" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConceptionaryPriorityQueue">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="conceptionaries" upperBound="-1"
+        eType="#//Conceptionary" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConceptSyncSet" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="elements"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rule Trigger" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="supported MP ME selection"
+        eType="#//MPMESelection"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="host" lowerBound="1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hosts" lowerBound="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GmfLabelSyncRule" abstract="true" eSuperTypes="#//ConceptSyncRule"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MPMESelection" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GmfLabelSyncTrigger"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RecommendationHintDecoratorProvider">
+    <eOperations name="provides"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GmfLabelSyncRecommender"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GmfLabelSelection" eSuperTypes="#//SingleMPME"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SupportedRuleChecker">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DECORATORTARGET_RULE_TABLE"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MP Hook" interface="true">
+    <eOperations name="hook into"/>
+    <eOperations name="is hookable into"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="System">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="supported rules" upperBound="-1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DEFAULT_GMFLABEL_WORDNET_SYNCRULE"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DEFAULT_GMFLABEL_ACRONYM_SYNCRULE"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="supported rules"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConceptSyncRule" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="concept" lowerBound="1"
+        eType="#//ConceptSyncSet"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EmfPropertySyncRule"/>
+  <eClassifiers xsi:type="ecore:EClass" name="WordNetSyncSet" eSuperTypes="#//DeniableSyncSet">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="synset"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AcronymSyncSet" eSuperTypes="#//DeniableSyncSet"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DeniableSyncSet" interface="true" eSuperTypes="#//ConceptSyncSet">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="blacklist"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GmfLabelWordNetSyncRule" eSuperTypes="#//GmfLabelSyncRule">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SYNSET_RULE_TABLE"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MonitoredRuleTable">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ruleTable"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SingleMPME" eSuperTypes="#//MPMESelection"/>
+</ecore:EPackage>

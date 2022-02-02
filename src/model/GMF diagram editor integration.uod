@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ObjectDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="GMF diagram editor integration" fontInfo="Omondo_Font_Default-10-0" metadata="uml2-1.0" initialized="true" tag="1000" key="32303036313030362045636C697073657370696C636520474D4620696E746567726174696F6E20322F54696D6D79">
+  <children xsi:type="editmodel:ObjectInstanceEditModel" targetConnections="//@children.4/@sourceConnections.0 //@children.3/@sourceConnections.2" name="DiagramEditor" backgroundRGB="64,0,128" foregroundRGB="255,255,0" location="63,70" size="204,42" fontInfo="Omondo_Font_Default-10-0" id="org.eclipse.gmf.runtime.diagram.ui.parts/DiagramEditor" itemName="GMF diagram editors" fieldId2value="{}" actif="true" multiInstance="true" stateName=""/>
+  <children xsi:type="editmodel:ObjectInstanceEditModel" targetConnections="//@children.2/@sourceConnections.1 //@children.3/@sourceConnections.1 //@children.5/@sourceConnections.0 //@children.10/@sourceConnections.0" name="Activator" location="78,340" size="171,34" id="edu.nccu.eclipsespilce.sandbox/Activator" itemName="Shuttle Eclipsespilce" fieldId2value="{}" actif="true" stateName=""/>
+  <children xsi:type="editmodel:ObjectInstanceEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.10/@sourceConnections.4" name="RecommendationHintDecorator" location="370,195" size="185,42" id="edu.nccu.eclipsespilce.sandbox/RecommendationHintDecorator" itemName="" fieldId2value="{}" multiInstance="true" stateName="">
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" name="decorate" autoLocated="true" source="//@children.2" target="//@children.4" targetEnd="//@children.2/@sourceConnections.0/@children.1" label="//@children.2/@sourceConnections.0/@children.2" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="90,0" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="100,42"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="decorate" size="43,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" name="Recommendation Hint source" autoLocated="true" source="//@children.2" target="//@children.1" targetEnd="//@children.2/@sourceConnections.1/@children.1" label="//@children.2/@sourceConnections.1/@children.2" sourceEnd="//@children.2/@sourceConnections.1/@children.0" connectionRouterKind="Manual" type="Composition">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="47,42" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="121,0"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="Recommendation Hint source" size="140,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:ObjectInstanceEditModel" targetConnections="//@children.10/@sourceConnections.2 //@children.4/@sourceConnections.1" name="RecommendationHintDecoratorProvider" location="70,199" size="217,34" id="edu.nccu.eclipsespilce.sandbox/RecommendationHintDecoratorProvider" itemName="" fieldId2value="{}" stateName="">
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" name="provides" autoLocated="true" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.0/@children.1" label="//@children.3/@sourceConnections.0/@children.2" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="217,17" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="0,21"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="provides" size="42,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" autoLocated="true" source="//@children.3" target="//@children.1" targetEnd="//@children.3/@sourceConnections.1/@children.1" label="//@children.3/@sourceConnections.1/@children.2" sourceEnd="//@children.3/@sourceConnections.1/@children.0" connectionRouterKind="Manual" type="Composition">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="93,34" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="85,0"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" name="registers to (via GMF Presentation Decorator Providers Extension Point)" autoLocated="true" source="//@children.3" target="//@children.0" targetEnd="//@children.3/@sourceConnections.2/@children.1" label="//@children.3/@sourceConnections.2/@children.2" sourceEnd="//@children.3/@sourceConnections.2/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="98,0" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="105,42"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="registers to (via GMF Presentation Decorator Providers Extension Point)" location="51,126" size="344,14" fontInfo="Arial-8-0" automaticRelocationAllowed="false" locationOnWireFromSource="21.000000000000004" distanceFromWire="-55.00000000000001" anchorKind="MiddlePart"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:ObjectInstanceEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.8/@sourceConnections.0" name="IDecoratorTarget" backgroundRGB="64,0,128" foregroundRGB="255,255,0" location="360,70" size="191,42" fontInfo="Omondo_Font_Default-10-0" id="org.eclipse.gmf.runtime.diagram.ui.services.decorator/IDecoratorTarget" itemName="Logic notations" fieldId2value="{}" actif="true" multiInstance="true" stateName="">
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" autoLocated="true" source="//@children.4" target="//@children.0" targetEnd="//@children.4/@sourceConnections.0/@children.1" label="//@children.4/@sourceConnections.0/@children.2" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manual" type="Aggregation">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="0,21" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="204,21"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" name="trigger creating" source="//@children.4" target="//@children.3" targetEnd="//@children.4/@sourceConnections.1/@children.1" label="//@children.4/@sourceConnections.1/@children.2" sourceEnd="//@children.4/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="56,42" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="147,0"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="trigger creating" location="270,161" size="73,14" fontInfo="Arial-8-0" automaticRelocationAllowed="false" locationOnWireFromSource="32.82188627442855" distanceFromWire="-109.3422323779265" anchorKind="MiddlePart"/>
+      <bendpoints secondRelativeDimension="199,-38" firstRelativeDimension="0,49"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" name="fire triggering" source="//@children.4" target="//@children.10" targetEnd="//@children.4/@sourceConnections.2/@children.1" label="//@children.4/@sourceConnections.2/@children.2" sourceEnd="//@children.4/@sourceConnections.2/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="191,37" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="75,0"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="fire triggering" location="520,120" size="64,14" fontInfo="Arial-8-0" automaticRelocationAllowed="false" locationOnWireFromSource="-15.0" distanceFromWire="-20.0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:ObjectInstanceEditModel" targetConnections="//@children.6/@sourceConnections.0 //@children.10/@sourceConnections.1" name="Rule" location="650,332" size="115,42" id="edu.nccu.eclipsespilce.sandbox/Rule" itemName="SWRL rules" fieldId2value="{}" multiInstance="true" stateName="">
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" autoLocated="true" source="//@children.5" target="//@children.1" targetEnd="//@children.5/@sourceConnections.0/@children.1" label="//@children.5/@sourceConnections.0/@children.2" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="Manual" type="Aggregation">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="0,24" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="171,16"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" name="delegates match/application recommending" source="//@children.5" target="//@children.10" targetEnd="//@children.5/@sourceConnections.1/@children.1" label="//@children.5/@sourceConnections.1/@children.2" sourceEnd="//@children.5/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="56,42" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="101,34"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="delegates match/application recommending" location="604,409" size="206,14" fontInfo="Arial-8-0" automaticRelocationAllowed="false" locationOnWireFromSource="-49.99999999999999" distanceFromWire="7.000000000000065" anchorKind="MiddlePart"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:ObjectInstanceEditModel" backgroundRGB="64,0,128" foregroundRGB="255,255,0" location="645,250" size="125,42" fontInfo="Omondo_Font_Default-10-0" itemName="EDOM elements" fieldId2value="{}" multiInstance="true" stateName="">
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" autoLocated="true" source="//@children.6" target="//@children.5" targetEnd="//@children.6/@sourceConnections.0/@children.1" label="//@children.6/@sourceConnections.0/@children.2" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="Manual" type="Aggregation">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="62,42" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="57,0"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" name="refer to" autoLocated="true" source="//@children.6" target="//@children.7" targetEnd="//@children.6/@sourceConnections.1/@children.1" label="//@children.6/@sourceConnections.1/@children.2" sourceEnd="//@children.6/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="62,0" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="80,42"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="refer to" size="36,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:ObjectInstanceEditModel" targetConnections="//@children.8/@sourceConnections.1 //@children.6/@sourceConnections.1" name="EClassifier" backgroundRGB="64,0,128" foregroundRGB="255,255,0" location="627,140" size="167,42" fontInfo="Omondo_Font_Default-10-0" id="org.eclipse.emf.ecore/EClassifier" itemName="EMF Classifiers" fieldId2value="{}" multiInstance="true" stateName=""/>
+  <children xsi:type="editmodel:ObjectInstanceEditModel" name="EObject" backgroundRGB="64,0,128" foregroundRGB="255,255,0" location="635,70" size="147,42" fontInfo="Omondo_Font_Default-10-0" id="org.eclipse.emf.ecore/EObject" itemName="Logic elements" fieldId2value="{}" multiInstance="true" stateName="">
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" name="adapt to" autoLocated="true" source="//@children.8" target="//@children.4" targetEnd="//@children.8/@sourceConnections.0/@children.1" label="//@children.8/@sourceConnections.0/@children.2" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="0,21" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="191,21"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="adapt to" size="39,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" name="type" autoLocated="true" source="//@children.8" target="//@children.7" targetEnd="//@children.8/@sourceConnections.1/@children.1" label="//@children.8/@sourceConnections.1/@children.2" sourceEnd="//@children.8/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="73,42" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="81,0"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="type" size="21,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" location="107,390" size="448,52" fontInfo="Arial-8-0" note="the DecoratorProvider and Decorators are NOT sure to be re-invoked by GMF regularly.&#xD;&#xA;Therefore to assure dynamic rule update w/o restarting Eclipsespilce, they SHOULD be &#xD;&#xA;actively triggered.">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" source="//@children.9" target="//@children.10/@sourceConnections.2" targetEnd="//@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="178,-3" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="-72,-22" anchorKind="FixedAtEdge" attachSource="true"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" autoLocated="true" source="//@children.9" target="//@children.10/@sourceConnections.4" targetEnd="//@children.9/@sourceConnections.1/@children.1" sourceEnd="//@children.9/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="204,-3" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="-90,-50" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:ObjectInstanceEditModel" targetConnections="//@children.12/@sourceConnections.0 //@children.5/@sourceConnections.1 //@children.4/@sourceConnections.2" name="RuleRecommender" location="509,320" size="119,34" id="edu.nccu.eclipsespilce.sandbox/RuleRecommender" itemName="" fieldId2value="{}" stateName="">
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" autoLocated="true" source="//@children.10" target="//@children.1" targetEnd="//@children.10/@sourceConnections.0/@children.1" label="//@children.10/@sourceConnections.0/@children.2" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="Manual" type="Composition">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="0,26" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="171,6"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" autoLocated="true" source="//@children.10" target="//@children.5" targetEnd="//@children.10/@sourceConnections.1/@children.1" label="//@children.10/@sourceConnections.1/@children.2" sourceEnd="//@children.10/@sourceConnections.1/@children.0" connectionRouterKind="Manual" type="Aggregation">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="119,22" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="0,10"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" targetConnections="//@children.9/@sourceConnections.0" name="trigger providing hint" autoLocated="true" source="//@children.10" target="//@children.3" targetEnd="//@children.10/@sourceConnections.2/@children.1" label="//@children.10/@sourceConnections.2/@children.2" sourceEnd="//@children.10/@sourceConnections.2/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="4,0" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="163,34"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="trigger providing hint" location="391,269" size="98,14" fontInfo="Arial-8-0" automaticRelocationAllowed="false" locationOnWireFromSource="-65.33434172016554" distanceFromWire="-18.879189389182905" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" name="trigger Recommendation creation" autoLocated="true" source="//@children.10" target="//@children.12" targetEnd="//@children.10/@sourceConnections.3/@children.1" label="//@children.10/@sourceConnections.3/@children.2" sourceEnd="//@children.10/@sourceConnections.3/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="59,34" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="119,0"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="trigger Recommendation creation" location="400,460" size="158,14" fontInfo="Arial-8-0" automaticRelocationAllowed="false" locationOnWireFromSource="48.00000000000001" distanceFromWire="-89.0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" targetConnections="//@children.9/@sourceConnections.1" name="trigger activating hint" autoLocated="true" source="//@children.10" target="//@children.2" targetEnd="//@children.10/@sourceConnections.4/@children.1" label="//@children.10/@sourceConnections.4/@children.2" sourceEnd="//@children.10/@sourceConnections.4/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="22,0" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="161,42"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="trigger activating hint" location="430,250" size="100,14" fontInfo="Arial-8-0" automaticRelocationAllowed="false" locationOnWireFromSource="21.0" distanceFromWire="50.99999999999999" anchorKind="MiddlePart"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:ObjectInstanceEditModel" name="IFigure" backgroundRGB="64,0,128" foregroundRGB="255,255,0" location="280,20" size="72,42" fontInfo="Omondo_Font_Default-10-0" id="org.eclipse.draw2d/IFigure" itemName="" fieldId2value="{}" multiInstance="true" stateName=""/>
+  <children xsi:type="editmodel:ObjectInstanceEditModel" targetConnections="//@children.10/@sourceConnections.3" name="RecommendationCreationTool" location="449,485" size="179,42" id="edu.nccu.eclipsespilce.sandbox/RecommendationCreationTool" itemName="" fieldId2value="{}" multiInstance="true" stateName="">
+    <sourceConnections xsi:type="editmodel:ObjectAssociationEditModel" autoLocated="true" source="//@children.12" target="//@children.10" targetEnd="//@children.12/@sourceConnections.0/@children.1" label="//@children.12/@sourceConnections.0/@children.2" sourceEnd="//@children.12/@sourceConnections.0/@children.0" connectionRouterKind="Manual" type="Composition">
+      <children xsi:type="editmodel:ObjectEndEditModel" location="139,0" attachSource="true"/>
+      <children xsi:type="editmodel:ObjectEndEditModel" location="79,34"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
+    </sourceConnections>
+  </children>
+  <diagramOptions xsi:type="options:ObjectDiagramOptions" level="0" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="10,10" gridOrigin="0,0" rulerUnit="pixel">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+</editmodel:ObjectDiagramEditModel>

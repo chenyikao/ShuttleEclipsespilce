@@ -1,0 +1,23 @@
+source.. = src/
+output.. = bin/
+bin.includes = META-INF/,\
+               .,\
+               plugin.xml,\
+               icons/,\
+               bin/,\
+               GMF diagram editor integration.uod,\
+               .umlproject,\
+               Plan.txt,\
+               JWI/edu.mit.jwi_1.1.1.jar
+src.includes = icons/,\
+               src/,\
+               plugin.xml,\
+               GMF diagram editor integration.uod,\
+               .project,\
+               Plan.txt,\
+               build.properties,\
+               .settings/,\
+               .classpath,\
+               META-INF/,\
+               .umlproject
+src.excludes = src/_backup/

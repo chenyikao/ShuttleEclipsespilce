@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="sandbox-aid" id="edu.nccu.eclipsespilce.sandbox" metadata="uml2-1.0" initialized="true" scrolledX="202" scrolledY="135" tag="1000" key="32303036313030362045636C697073657370696C636520474D4620696E746567726174696F6E20322F54696D6D79">
+  <children xsi:type="editmodel:ClassEditModel" name="Recommender" location="450,650" size="135,59" id="edu.nccu.eclipsespilce.sandbox/RuleRecommender" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" showMethodsParameterKinds="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showAssociationMember="true" showMethods="true" showAttributes="true" showLiterals="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Activator" location="507,-190" size="198,187" id="edu.nccu.eclipsespilce.sandbox/Activator" runTimeClassModel="Activator(),stop(Lorg.osgi.framework.BundleContext;),start(Lorg.osgi.framework.BundleContext;),getDefault(),pLUGIN_ID,plugin">
+    <children xsi:type="editmodel:CompartmentEditModel" size="104,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="pLUGIN_ID" id="edu.nccu.eclipsespilce.sandbox/Activator#pLUGIN_ID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="plugin" id="edu.nccu.eclipsespilce.sandbox/Activator#plugin"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="175,72">
+      <children xsi:type="editmodel:MethodEditModel" name="Activator" id="edu.nccu.eclipsespilce.sandbox/Activator#Activator()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDefault" id="edu.nccu.eclipsespilce.sandbox/Activator#getDefault()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="start" id="edu.nccu.eclipsespilce.sandbox/Activator#start(Lorg.osgi.framework.BundleContext;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="stop" id="edu.nccu.eclipsespilce.sandbox/Activator#stop(Lorg.osgi.framework.BundleContext;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" showMethodsParameterKinds="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showAssociationMember="true" showMethods="true" showAttributes="true" showLiterals="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0" name="AbstractDecorator" location="635,135" size="535,223" id="org.eclipse.gmf.runtime.diagram.ui.services.decorator/AbstractDecorator">
+    <children xsi:type="editmodel:CompartmentEditModel" size="182,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="decoration" id="org.eclipse.gmf.runtime.diagram.ui.services.decorator/AbstractDecorator#decoration"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="decoratorTarget" id="org.eclipse.gmf.runtime.diagram.ui.services.decorator/AbstractDecorator#decoratorTarget"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="296,108">
+      <children xsi:type="editmodel:MethodEditModel" name="AbstractDecorator" id="org.eclipse.gmf.runtime.diagram.ui.services.decorator/AbstractDecorator#AbstractDecorator(Lorg.eclipse.gmf.runtime.diagram.ui.services.decorator.IDecoratorTarget;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deactivate" id="org.eclipse.gmf.runtime.diagram.ui.services.decorator/AbstractDecorator#deactivate()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDecoration" id="org.eclipse.gmf.runtime.diagram.ui.services.decorator/AbstractDecorator#getDecoration()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDecoratorTarget" id="org.eclipse.gmf.runtime.diagram.ui.services.decorator/AbstractDecorator#getDecoratorTarget()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeDecoration" id="org.eclipse.gmf.runtime.diagram.ui.services.decorator/AbstractDecorator#removeDecoration()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDecoration" id="org.eclipse.gmf.runtime.diagram.ui.services.decorator/AbstractDecorator#setDecoration(Lorg.eclipse.gmf.runtime.diagram.ui.services.decorator.IDecoration;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" showMethodsParameterKinds="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showAssociationMember="true" showMethods="true" showAttributes="true" showLiterals="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="RecommendingDecorator" location="720,408" size="350,133" id="edu.nccu.eclipsespilce.sandbox/RecommendationHintDecorator" runTimeClassModel="activate(),RecommendingDecorator(Lorg.eclipse.gmf.runtime.diagram.ui.services.decorator.IDecoratorTarget;),refresh()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel">
+      <children xsi:type="editmodel:MethodEditModel" name="RecommendingDecorator" id="edu.nccu.eclipsespilce.sandbox/RecommendationHintDecorator#RecommendationHintDecorator(Lorg.eclipse.gmf.runtime.diagram.ui.services.decorator.IDecoratorTarget;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="activate" id="edu.nccu.eclipsespilce.sandbox/RecommendationHintDecorator#activate()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="refresh" id="edu.nccu.eclipsespilce.sandbox/RecommendationHintDecorator#refresh()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.eclipse.gmf.runtime.diagram.ui.services.decorator/AbstractDecorator&lt;-edu.nccu.eclipsespilce.sandbox/RecommendationHintDecorator" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="174,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="259,223"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" showMethodsParameterKinds="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showAssociationMember="true" showMethods="true" showAttributes="true" showLiterals="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.5/@sourceConnections.0" name="IDecoratorProvider" location="50,247" size="542,111" id="org.eclipse.gmf.runtime.diagram.ui.services.decorator/IDecoratorProvider">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="291,18">
+      <children xsi:type="editmodel:MethodEditModel" name="createDecorators" id="org.eclipse.gmf.runtime.diagram.ui.services.decorator/IDecoratorProvider#createDecorators(Lorg.eclipse.gmf.runtime.diagram.ui.services.decorator.IDecoratorTarget;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.eclipse.gmf.runtime.common.core.service/IProvider&lt;-org.eclipse.gmf.runtime.diagram.ui.services.decorator/IDecoratorProvider" source="//@children.4" target="//@children.6" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="270,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="211,147"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" showMethodsParameterKinds="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showAssociationMember="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="RecommendingDecoratorProvider" location="133,408" size="375,151" id="edu.nccu.eclipsespilce.sandbox/RecommendationHintDecoratorProvider" runTimeClassModel="addProviderChangeListener(Lorg.eclipse.gmf.runtime.common.core.service.IProviderChangeListener;),removeProviderChangeListener(Lorg.eclipse.gmf.runtime.common.core.service.IProviderChangeListener;),createDecorators(Lorg.eclipse.gmf.runtime.diagram.ui.services.decorator.IDecoratorTarget;),provides(Lorg.eclipse.gmf.runtime.common.core.service.IOperation;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="352,72">
+      <children xsi:type="editmodel:MethodEditModel" name="addProviderChangeListener" id="edu.nccu.eclipsespilce.sandbox/RecommendationHintDecoratorProvider#addProviderChangeListener(Lorg.eclipse.gmf.runtime.common.core.service.IProviderChangeListener;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createDecorators" id="edu.nccu.eclipsespilce.sandbox/RecommendationHintDecoratorProvider#createDecorators(Lorg.eclipse.gmf.runtime.diagram.ui.services.decorator.IDecoratorTarget;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="provides" id="edu.nccu.eclipsespilce.sandbox/RecommendationHintDecoratorProvider#provides(Lorg.eclipse.gmf.runtime.common.core.service.IOperation;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeProviderChangeListener" id="edu.nccu.eclipsespilce.sandbox/RecommendationHintDecoratorProvider#removeProviderChangeListener(Lorg.eclipse.gmf.runtime.common.core.service.IProviderChangeListener;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.eclipse.gmf.runtime.diagram.ui.services.decorator/IDecoratorProvider&lt;-edu.nccu.eclipsespilce.sandbox/RecommendationHintDecoratorProvider" source="//@children.5" target="//@children.4" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="187,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="270,111"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" showMethodsParameterKinds="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showAssociationMember="true" showMethods="true" showAttributes="true" showLiterals="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.4/@sourceConnections.0" name="IProvider" location="109,50" size="423,147" id="org.eclipse.gmf.runtime.common.core.service/IProvider">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="352,54">
+      <children xsi:type="editmodel:MethodEditModel" name="addProviderChangeListener" id="org.eclipse.gmf.runtime.common.core.service/IProvider#addProviderChangeListener(Lorg.eclipse.gmf.runtime.common.core.service.IProviderChangeListener;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="provides" id="org.eclipse.gmf.runtime.common.core.service/IProvider#provides(Lorg.eclipse.gmf.runtime.common.core.service.IOperation;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeProviderChangeListener" id="org.eclipse.gmf.runtime.common.core.service/IProvider#removeProviderChangeListener(Lorg.eclipse.gmf.runtime.common.core.service.IProviderChangeListener;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" showMethodsParameterKinds="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showAssociationMember="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=7"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="10,10" gridOrigin="0,0" rulerUnit="pixel">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" showMethodsParameterKinds="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showAssociationMember="true" showMethods="true" showAttributes="true" showLiterlas="true"/>
+</editmodel:ClassDiagramEditModel>

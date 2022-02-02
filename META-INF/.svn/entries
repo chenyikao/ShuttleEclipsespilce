@@ -1,0 +1,64 @@
+8
+
+dir
+4
+svn://soap.cs.nccu.edu.tw/projects/shuttle/trunk/META-INF
+svn://soap.cs.nccu.edu.tw/projects/shuttle
+
+
+
+2007-03-22T09:44:51.339584Z
+4
+wta
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fdcd09e6-0b7b-4646-a5a0-e6adb4aadda8
+
+MANIFEST-cykao on SAX.MF
+file
+5
+svn://soap.cs.nccu.edu.tw/projects/shuttle/trunk/META-INF/MANIFEST-cykao%20on%20SAX.MF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
+
+MANIFEST.MF
+file
+9
+
+
+
+2007-07-02T03:10:19.812000Z
+fad4dd9462d0e20841705b3fcdc916fc
+2007-07-04T05:39:09.330477Z
+9
+wta
+

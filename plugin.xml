@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+
+<!-- 					Revision history and roadmap						-->
+<!-- ====================================================================== -->
+<!-- version 0.1.0.alpha: the very first internal release					-->
+<!-- version 0.2.0.alpha: utilize the Job framework of Eclipse concurrency	-->
+<!-- version 0.3.0.alpha: text editors support								-->
+<!-- version 0.5.0.alpha: SWRL-based sync rules support						-->
+<!-- version 1.0.0.alpha: Java editors support								-->
+
+<plugin>
+<!-- 	hooking via general text ecditor Hyperlink Detector extension point 
+		and then checking for supported specific editors such as Xtext ones...
+		
+		Via Hyperlink Detector Target extension point? Not necessary 
+		Via Quick Diff extension point? Not use rulers RIGHT NOW
+		Via Ruler Columns extension point? Not use rulers RIGHT NOW 
+		Via Spell Engine extension point? Only one spell checker is loaded in default and gonna mislead users 
+
+	<extension
+	  point="org.eclipse.ui.workbench.texteditor.hyperlinkDetectorTargets">
+	  <target
+	    id="org.eclipse.jdt.ui.text"
+	    name="Text Editor">
+	    <context type="org.eclipse.ui.texteditor.ITextEditor"/>
+	  </target>
+	</extension>
+	
+-->
+	<extension			
+        point="org.eclipse.ui.workbench.texteditor.hyperlinkDetectors">
+	  <hyperlinkDetector
+		id="ShuttleSyncSetElementHyperlinkDetector"
+	    targetId="org.eclipse.ui.DefaultTextEditor"
+	    class="tw.edu.nccu.shuttle.texteditor.SyncSetElementHyperlinkDetector"
+        name="Shuttle SyncSet Element Hyperlink Detector"/>
+	</extension>
+
+
+   <extension
+		id="ShuttleRecommendationHintDecoratorProvider"
+        name="Shuttle Recommendation Hint Decorator Provider"
+        point="org.eclipse.gmf.runtime.diagram.ui.decoratorProviders">
+      <decoratorProvider class="tw.edu.nccu.shuttle.gmf.RecommendationHintDecoratorProvider">
+         <Priority name="Medium"/>
+      </decoratorProvider>
+   </extension>
+</plugin>

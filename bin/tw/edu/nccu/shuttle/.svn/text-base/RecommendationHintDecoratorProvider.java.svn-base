@@ -1,0 +1,138 @@
+package tw.edu.nccu.shuttle.sandbox;
+
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.Set;
+
+import org.eclipse.gmf.runtime.common.core.service.IOperation;
+import org.eclipse.gmf.runtime.common.core.service.IProviderChangeListener;
+import org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart;
+import org.eclipse.gmf.runtime.diagram.ui.services.decorator.CreateDecoratorsOperation;
+import org.eclipse.gmf.runtime.diagram.ui.services.decorator.IDecoratorProvider;
+import org.eclipse.gmf.runtime.diagram.ui.services.decorator.IDecoratorTarget;
+import org.eclipse.gmf.runtime.emf.type.core.IElementType;
+
+/**
+ * <p>
+ * Currently the provider probably is in singleton pattern - one provider in
+ * whole Shuttle running. This centralized pattern may provide efficiency.
+ * </p>
+ * 
+ * TODO: Maybe adapt to the pattern of one provider per RuleRecommender or even
+ * one provider per Rule (merging provider and RuleRecommender) with one
+ * self-maintaining Recommendation Hint mechanism under GMF
+ * Service-Provider-ProviderChangeListener framework?
+ * 
+ * @author Kao, Chen-yi
+ * 
+ */
+public class RecommendationHintDecoratorProvider implements IDecoratorProvider {
+
+	static private class SupportedRuleChecker {
+		/**
+		 * An efficient table for monitoring matched IDecoratorTargets and Rules (for
+		 * accessing monitored ME's)
+		 */
+		final static private MonitoredRuleTable<IDecoratorTarget> DECORATORTARGET_RULE_TABLE = 
+			new MonitoredRuleTable<IDecoratorTarget>();
+
+		/**
+		 * TODO: Triggering- and consequent-supporting MP ME Selections SHOULD
+		 * be distinguished.
+		 * 
+		 * @param decoratorTarget -
+		 *            Decorator Target
+		 * @return IElementType ME Adapter For the Decorator Target
+		 */
+		Iterable<Rule> getRulesForDecoratorTarget(IDecoratorTarget decoratorTarget)
+				throws NoSuchElementException {
+			Iterable<Rule> rules; 
+			try {
+				rules =	DECORATORTARGET_RULE_TABLE.getRules(decoratorTarget);
+				// if DECORATORTARGET_RULE_TABLE has the rule, then return it
+				return rules;
+			} catch (NoSuchElementException e) {
+				
+				// if not monitored, check all rules' Triggers, for
+				// supportedMPMESelection, then Recommenders, for
+				// antecedentMPMESelection/consequentMPMESelection
+				rules = System.getSupportedRules();
+				HashSet<Rule> newDTRules = new HashSet<Rule>();
+				for (Rule rule : rules) {
+					if (rule.isHookableInto(decoratorTarget)) newDTRules.add(rule);
+				}
+				if (newDTRules.isEmpty()) throw e;
+				else {
+					DECORATORTARGET_RULE_TABLE.monitorRules(
+							decoratorTarget, newDTRules);
+					return newDTRules;
+				}
+				
+			}
+		}
+
+	}
+
+	private SupportedRuleChecker supportedRuleChecker = new SupportedRuleChecker();
+
+	/**
+	 * <p>
+	 * Attaching triggered Rule to opened (viewable) GMF Editors by the way.
+	 * Including deploying Rule Triggering Listener (another face of MP
+	 * Sub-inference engine). See "roundtrip way of locating T-MPMEs" in
+	 * {@link System}.
+	 * </p>
+	 * 
+	 * @see org.eclipse.gmf.runtime.diagram.ui.services.decorator.IDecoratorProvider#createDecorators(org.eclipse.gmf.runtime.diagram.ui.services.decorator.IDecoratorTarget)
+	 */
+	public void createDecorators(IDecoratorTarget decoratorTarget) {
+		try {
+		
+			// register Trigger, for
+			// supportedMPMESelection, then Recommender, for
+			// antecedentMPMESelection/consequentMPMESelection
+			Iterable<Rule> monitoredDTRules;
+			monitoredDTRules = 
+				supportedRuleChecker.getRulesForDecoratorTarget(decoratorTarget);
+			for (Rule rule : monitoredDTRules) {
+				rule.hookInto(decoratorTarget);
+			}
+			
+			// then complete the main mission after all: installing the decorator!
+			// TODO temporary system key
+			decoratorTarget.installDecorator("Shuttle",
+					new RecommendationHintDecorator(decoratorTarget));
+
+		} catch (NoSuchElementException e) {
+			return;
+		}
+	}
+
+	public void addProviderChangeListener(IProviderChangeListener listener) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public boolean provides(IOperation operation) {
+		if (!(operation instanceof CreateDecoratorsOperation)) {
+			return false;
+		}
+
+		try {
+			supportedRuleChecker.getRulesForDecoratorTarget(
+					((CreateDecoratorsOperation) operation).getDecoratorTarget());
+			return true;
+		} catch (NoSuchElementException e) {
+			return false;
+		}
+	}
+
+	public void removeProviderChangeListener(IProviderChangeListener listener) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

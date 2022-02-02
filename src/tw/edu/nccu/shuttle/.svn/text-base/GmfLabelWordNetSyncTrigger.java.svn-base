@@ -1,0 +1,115 @@
+/**
+ * 
+ */
+package tw.edu.nccu.shuttle.sandbox;
+
+import java.util.Map;
+
+import org.eclipse.core.runtime.IAdaptable;
+import org.eclipse.draw2d.Button;
+import org.eclipse.draw2d.Label;
+import org.eclipse.draw2d.Panel;
+import org.eclipse.draw2d.UpdateListener;
+import org.eclipse.draw2d.geometry.Point;
+import org.eclipse.draw2d.geometry.Rectangle;
+import org.eclipse.gef.editparts.AbstractGraphicalEditPart;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrapLabel;
+
+/**
+ * @author Kao, Chen-yi
+ *
+ */
+public class GmfLabelSyncTrigger extends RuleTrigger implements UpdateListener {
+
+	/**
+	 * Label text change is NOT going to trigger bean property change event 
+	 * currently. So we have to monitor the change on our own.
+	 */
+	// TODO: for temporary demo. To be integrated with SingleMPME/GmfLabelSelection?
+	private WrapLabel hookedMPMELabel;
+	private String oriHookedMPMELabelValue;
+	
+	// TODO: for temporary demo. 
+	// SHOULD be leveled up to MPHook and guarded by methods ('cause it's
+	// initially null)
+//	private static UnsupportedOperationException NOT_HOOKABLE_EXCEPTION;
+			
+	protected void hookIntoCacheSolved(IAdaptable mpmeAdaptable) {
+		try {
+			AbstractGraphicalEditPart mpmeEditPart = 
+				(AbstractGraphicalEditPart) mpmeAdaptable.getAdapter(
+						AbstractGraphicalEditPart.class);
+			hookedMPMELabel = (WrapLabel) mpmeEditPart.getFigure();
+			// label text change is NOT going to trigger bean property change
+			// event currently
+			hookedMPMELabel.getUpdateManager().addUpdateListener(this);
+			oriHookedMPMELabelValue = hookedMPMELabel.getText();
+		} catch (NullPointerException e) {
+			// TODO: the same handling to the following
+		} catch (ClassCastException e) {
+			// TODO: for temporary demo. The exception message SHOULD be
+			// internationalized!
+			throw new UnsupportedOperationException(
+					"The MPME Adaptable is neither AbstractGraphicalEditPart adaptable nor WrapLabel host!");
+		}
+	}
+
+	/*
+	 * (non-Javadoc) GMF Label is controlled by WrapLabel. So we have to
+	 * recognize (return true for) every WrapLabel of
+	 * AbstractGraphicalEditParts.
+	 * 
+	 * @see tw.edu.nccu.shuttle.sandbox.MPHook#isHookableIntoCacheSolved(org.eclipse.core.runtime.IAdaptable)
+	 */
+	protected boolean isHookableIntoCacheSolved(IAdaptable mpmeAdaptable) {
+		try {
+			AbstractGraphicalEditPart mpmeEditPart = 
+				(AbstractGraphicalEditPart) mpmeAdaptable.getAdapter(
+						AbstractGraphicalEditPart.class);
+			return (mpmeEditPart.getFigure() instanceof WrapLabel)?true:false;
+		} catch (ClassCastException e) {
+			// supports the host of AbstractGraphicalEditPart ONLY!
+			return false;
+		}
+	}
+
+	public void notifyPainting(Rectangle damage, Map dirtyRegions) {
+		// NOT interested in painting
+	}
+
+	/* (non-Javadoc)
+	 * TODO: WrapLabel.setText() occurs too often for each character key-in 
+	 * 	and therefore does notifyValidating(). So notifyValidating() MUST be 
+	 * 	deferred and the "Enter" KeyEvent would be better monitored.
+	 * @see org.eclipse.draw2d.UpdateListener#notifyValidating()
+	 */
+	public void notifyValidating() {
+		String newHookedMPMELabelValue = hookedMPMELabel.getText();
+		if (!newHookedMPMELabelValue.equals(oriHookedMPMELabelValue)) {
+			// TODO for temporary demo, SHOULD trigger the host in the future!
+			java.lang.System.out.println(
+					oriHookedMPMELabelValue + " -> " + newHookedMPMELabelValue);
+			oriHookedMPMELabelValue = newHookedMPMELabelValue;
+
+			// TODO: for temporary demo. SHOULD be put into a GmfLabelSyncRecommender.
+			
+			// Tooltip:
+			Label tooltip = new Label("old value -> new value?");
+//			Panel tooltip = new Panel();
+//			tooltip.add(new Label(oriHookedMPMELabelValue));
+//			tooltip.add(new Button("Deprecate this rule"));
+//			tooltip.setLocation(hookedMPMELabel.getLocation());	//failed!
+			tooltip.setLocation(new Point());	//failed!
+//			tooltip.setFocusTraversable(true);	//failed!
+			hookedMPMELabel.setToolTip(tooltip);
+
+			// IFigure child adding: failed!
+//			Label tooltip = new Label("new value...");
+//			tooltip.setLocation(new Point());
+//			tooltip.setVisible(true);
+//			hookedMPMELabel.add(tooltip);
+			
+		}
+	}
+
+}

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="big5"?>
+<!DOCTYPE xase>
+
+<xase xmlns="http://plum.cs.nccu.edu.tw/~s8605/XASE"
+      xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xsi:schemaLocation
+       ="http://plum.cs.nccu.edu.tw/~s8605/XASE http://plum.cs.nccu.edu.tw/~s8605/XASE/xase1_0_a4.schema"
+      xml:lang="en">
+
+
+<dataDictionary >
+
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-GXL-GrapheXchangeLanguage-theWebpage" />
+	</entry>
+
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-MetaEdit--theWebpage" />
+	</entry>
+
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-Domain-specificmodelling-10timesfasterthanUML-theWebpage" />
+	</entry>
+
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-UPGRADE-Aframeworkforgraph-basedapplications-theWebpage" />
+	</entry>
+
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-PBSToolkit-Reference-theWebpage" />
+	</entry>
+
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-RigiGroupHomePage-theWebpage" />
+	</entry>
+
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-IST-WorkingGroupEbert-Overview-theWebpage" />
+	</entry>
+
+<!--
+??a software reverse-engineering workbench, the system runs under OS/2 and SUN Solaris
+??http://www.uni-koblenz.de/~ist/gupro.en.html
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+<!--
+??under-development software, meta-CASE tool and CASE tools
+??http://www.uni-koblenz.de/~ist/kogge.en.html
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+<!--
+??free, open software, a tool for round-trip software engineering using UML diagrams and Java
+??http://www.upb.de/cs/fujaba/
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+<!--
+??free, open software, a tool for describing, exploring and automatically verifying systems
+??http://www.dcs.ed.ac.uk/home/cwb/
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+<!--
+??free, open software, a tool ??
+??http://rw4.cs.uni-sb.de/users/sander/html/gsvcg1.html
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+<!--
+??variety of commercial softwares
+??http://www.ilog.com
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+<!--
+??SWAG @ University of Waterloo
+?? focused on architecture recovery, software evolution, and reverse-engineering tool exchange format standardization. The SWAG has developed several reverse engineering and architecture visualization tools such the Portable Bookshelf (PBS), the C++ Fact Extraction Tool (CppX) and the SWAGKit.
+??http://swag.uwaterloo.ca/
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+<!--
+??The Software Architecture Toolkit
+??to extract, abstract and present Software Achitectures. Currently Swagkit supports the extraction of C/C++ code, the abstraction to the architectural level and the presentation in a Landscape form. Swagkit has been used to visualize the Linux Operating System and the VIM editor. Swagkit currently runs under x86 Linux.
+??http://www.swag.uwaterloo.ca/swagkit/
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+<!--
+??Catalog of OMG Modeling and Metadata Specifications
+??http://www.omg.org/technology/documents/modeling_spec_catalog.htm
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+<!--
+??abstract general object model (meta-data) interchange specification
+??http://www.omg.org/docs/formal/03-05-02.pdf
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+<!--
+??a meta-software-process-model specification for the software process interchange
+??http://www.omg.org/docs/formal/02-11-14.pdf
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-IST-ArbeitsgruppeEbert-Literatur-theWebpage" />
+	</entry>
+
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-IntegratedDevelopmentEnvironment-IDE--theWebpage" />
+	</entry>
+
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-AnOMTMetamodel-theWebpage" />
+	</entry>
+
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-OperationalSemanticsofVisualNotations-theWebpage" />
+	</entry>
+
+<!--
+??
+It competes with the following aspects of IASE: ??VM, VIE, U2XASE, XASE2J and XASE2XSLT
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+<!--
+??
+It competes with the following aspects of IASE: ??VM, VIE, U2XASE, XASE2J and XASE2XSLT
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+<!--
+??
+It competes with the following aspects of IASE: ??VM, VIE, U2XASE, XASE2J and XASE2XSLT
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+<!--
+??
+It competes with the following aspects of IASE: ??VM, VIE, U2XASE, XASE2J and XASE2XSLT
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+<!--
+??
+It competes with the following aspects of IASE: ??VM, VIE, U2XASE, XASE2J and XASE2XSLT
+-->
+	<entry inReferences="true" >
+		<ref xlink:type="simple" xlink:href="../../_dictionary/Web%20pages.xase#En-??" />
+	</entry>
+
+</dataDictionary>
+
+</xase>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<xase xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:n="http://plum.cs.nccu.edu.tw/~s8605/XASE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://plum.cs.nccu.edu.tw/~s8605/XASE
+T:\DOCUMENT\SOFTWA~1\XASE\[implementation]\XMLSCH~1\xase_1_0_a4.xsd">
+	<meta>
+		<author xlink:type="simple" xlink:href="../../dictionary/people.xase#En-CYKao"/>
+	</meta>
+	<project id="ShuttleEclipsespilce">
+		<version>
+			<primaryCode>1</primaryCode>
+			<revisionCode>0</revisionCode>
+			<alphaCode>0</alphaCode>
+			<conflictResolverCode>cs.nccu.edu.tw</conflictResolverCode>
+		</version>
+		<nameEntryRef xlink:type="simple" xlink:href="dictionary.xase#En-Shuttle-Eclipsespilce"/>
+		<supervisor xlink:type="simple" xlink:href="../../dictionary/people.xase#En-CCChen"/>
+		<director xlink:type="simple" xlink:href="../../dictionary/people.xase#En-CYKao"/>
+		<coworker xlink:type="simple" xlink:href="../../dictionary/people.xase#En-CYKao"/>
+		<management>
+			<softwareProcess model="evolutionary">??
+<!--
+??project management: 2005-02-15 ~ ??
+-->
+			</softwareProcess>
+		</management>
+		
+		<!--
+[feasibility] requirement:
+
+[depending on EclipseUML while standard-compliant:mid-high]
+	->	[depend_eclipseuml:high] 
+	->	[eclipseuml_dresden:mid]
+
+[depending on Poseidon for UML Professional Edition while Eclipse-UML2-compliant:low-mid]
+	->	[depend_poseidon_pro:low] 
+	->	[poseidon_eclipseuml2:mid]
+//Though it's almost impossible to depend on Poseidon for UML Professional Edition currently the internal system design should be better Eclipse-independent and prepare for possible future ArgoUML/Poseidon for UML integration.
+
+[depend_eclipseuml:high] Eclipse-based : depending on EclipseUML
+[depend_poseidon_pro:low] Eclipse-based : depending Poseidon for UML Professional Edition
+
+[poseidon_eclipseuml2:mid] Eclipse-based : Eclipse UML2 compliant : Poseidon for UML with Eclipse UML2 wrapper
+[eclipseuml_dresden:mid] standard-compliant : Dresden OCL Toolkit compliant : EclipseUML with Dresden OCL Toolkit wrapper
+-->
+
+		<!--
+requirements
+	->	design:
+
+for me, Eclipse-based
+for me, intuitive to demonstrate : real-time model modification reflection
+ : collaboration with Eclipse plugins
+for me, money-saving
+	->	collaboration with Omondo EclipseUML
+-->
+	</project>
+</xase>

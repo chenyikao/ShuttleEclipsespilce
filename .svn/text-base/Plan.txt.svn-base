@@ -1,0 +1,9 @@
+building scenario:
+- merge the code of Recommender
+- merge relative extension points of the integration into plug-in.xml
+
+running scenario:
+new Eclipse application configuration
+> run Logic plug-in w/ registering relative extension points of the integration
+> new Logic diagram example
+> when the mouse moves to any GMF Node, show recommendation example.

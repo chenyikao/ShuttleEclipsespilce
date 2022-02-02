@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_tzIbwO9mEd2HmMq5Flyuag" name="Package">
+  <elementImport xmi:id="_t9aZIO9mEd2HmMq5Flyuag">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_t9jjEO9mEd2HmMq5Flyuag">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_t9jjEe9mEd2HmMq5Flyuag">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_t9jjEu9mEd2HmMq5Flyuag">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_K85nQO9nEd2HmMq5Flyuag" name="Transition">
+    <ownedAttribute xmi:id="_aWnjQO9nEd2HmMq5Flyuag" name="event" type="__trd0Pp_Ed2OBIsCbTCD6w" aggregation="composite"/>
+    <ownedAttribute xmi:id="_xgGxc_TEEd21guzfjqDkIg" name="toState" type="_Oyn7oO9nEd2HmMq5Flyuag" association="_xfgUgPTEEd21guzfjqDkIg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vbjpUPTQEd21guzfjqDkIg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vb2kQPTQEd21guzfjqDkIg" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Oyn7oO9nEd2HmMq5Flyuag" name="State">
+    <ownedAttribute xmi:id="__RMYoO9nEd2HmMq5Flyuag" name="label" type="_BEs7IPqAEd2OBIsCbTCD6w" aggregation="composite"/>
+    <ownedAttribute xmi:id="_HULXoO9oEd2HmMq5Flyuag" name="isFinal" type="_CeG-EPqAEd2OBIsCbTCD6w" aggregation="composite"/>
+    <ownedAttribute xmi:id="_pK9E0O9oEd2HmMq5Flyuag" name="isInitial" type="_CeG-EPqAEd2OBIsCbTCD6w" aggregation="composite"/>
+    <ownedAttribute xmi:id="_t1uK0O9oEd2HmMq5Flyuag" name="currentState" type="_CeG-EPqAEd2OBIsCbTCD6w" aggregation="composite"/>
+    <ownedAttribute xmi:id="_HfvbE_TREd21guzfjqDkIg" name="toTransition" type="_K85nQO9nEd2HmMq5Flyuag" association="_HflqEPTREd21guzfjqDkIg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qod6IPTREd21guzfjqDkIg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qod6IfTREd21guzfjqDkIg"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xfgUgPTEEd21guzfjqDkIg" memberEnd="_xgGxcPTEEd21guzfjqDkIg _xgGxc_TEEd21guzfjqDkIg">
+    <ownedEnd xmi:id="_xgGxcPTEEd21guzfjqDkIg" name="fromTransition" type="_K85nQO9nEd2HmMq5Flyuag" association="_xfgUgPTEEd21guzfjqDkIg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xMpzgPTQEd21guzfjqDkIg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xMpzgfTQEd21guzfjqDkIg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HflqEPTREd21guzfjqDkIg" memberEnd="_HfvbEPTREd21guzfjqDkIg _HfvbE_TREd21guzfjqDkIg">
+    <ownedEnd xmi:id="_HfvbEPTREd21guzfjqDkIg" name="fromState" type="_Oyn7oO9nEd2HmMq5Flyuag" association="_HflqEPTREd21guzfjqDkIg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NCPaUPTREd21guzfjqDkIg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NCPaUfTREd21guzfjqDkIg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="__trd0Pp_Ed2OBIsCbTCD6w" name="String"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_BEs7IPqAEd2OBIsCbTCD6w" name="Integer"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_CeG-EPqAEd2OBIsCbTCD6w" name="Boolean"/>
+</uml:Package>

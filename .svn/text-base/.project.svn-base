@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Shuttle</name>
+	<comment>@key 32303036313030362D313030302045636C697073657370696C636520474D4620696E746567726174696F6E20322F54696D6D79 </comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.pde.ManifestBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.pde.SchemaBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.omondo.uml.std.Builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.pde.PluginNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>com.omondo.uml.std.Nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>ICU4J</name>
+			<type>2</type>
+			<location>I:/Program Files/ICU4J</location>
+		</link>
+		<link>
+			<name>JWI</name>
+			<type>2</type>
+			<location>I:/Program Files/JWI</location>
+		</link>
+		<link>
+			<name>JWNL</name>
+			<type>2</type>
+			<location>I:/Program Files/jwnl</location>
+		</link>
+	</linkedResources>
+</projectDescription>

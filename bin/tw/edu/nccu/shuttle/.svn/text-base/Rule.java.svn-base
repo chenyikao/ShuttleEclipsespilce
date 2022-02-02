@@ -1,0 +1,140 @@
+package tw.edu.nccu.shuttle.sandbox;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.Vector;
+
+import org.eclipse.core.runtime.IAdaptable;
+import org.eclipse.gmf.runtime.emf.type.core.IElementType;
+
+
+
+/**
+ * TODO: Hierarchical MP inference - Rules and inferences can be multi-leveled.
+ * Rules of higher levels ask ones of lower levels for concrete visualization of
+ * triggering, matching and recommendation.<br/>
+ * 
+ * Use Visitor or Containment pattern? Or leave it to MP Sub-inference-engine?<br/>
+ * 
+ * ONLY care for the hierarchies involving MPs. Leave other hierarchical
+ * inferences to KAON2.
+ * 
+ * <pre>
+ *  Only in MP-level Rule should know MPMEs 
+ *  -&gt; MPRule SHOULD be separated from Rule
+ * </pre>
+ * 
+ * This abstract class is already geared with some caching technology for saving 
+ * from possible redundant hookability checkings in Triggers and Recommenders.
+ * 
+ * @author Kao, Chen-yi
+ * @model
+ * 
+ */
+public abstract class Rule extends MPHook {
+
+	protected List<RuleTrigger> triggers;
+	
+	/**
+	 * TODO: for temporary demo.
+	 * Recommender should be imported and shared from the system ({@link System})?
+	 * 
+	 * @model
+	 */
+	protected List<RuleRecommender> recommenders;
+	
+	public Rule() {
+		super();
+		// TODO: needs to save memory initially (limit the initial capacity
+		// reasonably)?
+		triggers = new Vector<RuleTrigger>();
+		recommenders = new Vector<RuleRecommender>();
+	}
+
+//	public void setMostHookable(boolean mostHookable) {
+//		if (mostHookable) 
+//	}
+	
+	/**
+	 * TODO: Rule should be triggered by supported and existing MPMEs, 
+	 * which are deployed
+	 * with Rule Triggering Listener (another face of MP Sub-inference engine)
+	 * while being "decorated".
+	 * 
+	 * TODO: trigger(triggeredMPME)?
+	 * 
+	 * TODO: triggering flow
+	 * ...
+	 * Check the triggering coverage in Antecedent
+	 * -> if Antecedent is fully covered by triggering
+	 * -> Rule is matched (i.e. {@link #match()}).
+	 * 
+	 * @see RecommendationHintDecoratorProvider
+	 * @generated
+	 */
+	public RuleRecommender trigger() {
+		// TODO: Recommend the match
+		// recommender.recommendMatch(...);
+		// DecoratorProvider.createDecorators(...);
+		// TODO: for temporary demo. One-step trigger/match
+//		RuleRecommender newRecommender = new RuleRecommender(this);
+		// SHOULD NOT be duplicated recommenders here (everyone is newly created!)
+//		assert(recommenders.add(newRecommender) == true);
+//		return newRecommender;
+		return null;
+	}
+	
+	/**
+	 * @param recommender
+	 * @generated
+	 */
+	public void match(RuleRecommender recommender) {
+		// TODO: Currently just plays a notification to {@link Rule}.
+		//	recommender.recommendApplication(triggeredMPMESelections, consequentMPMESelections)?
+		recommender.recommendApplication();
+	}
+
+	/**
+	 * @generated
+	 */
+	public void apply() {
+		// TODO ??
+	}
+
+	/*
+	 * (non-Javadoc) This implementation is a delegation to Triggers
+	 * and Recommenders. 
+	 * 
+	 * @see tw.edu.nccu.shuttle.sandbox.MPHook#hookIntoCacheSolved(org.eclipse.core.runtime.IAdaptable)
+	 */
+	protected void hookIntoCacheSolved(IAdaptable mpmeAdaptable)
+			throws UnsupportedOperationException {
+		for (RuleTrigger trigger : triggers)
+			trigger.hookInto(mpmeAdaptable);
+		for (RuleRecommender recommender : recommenders)
+			recommender.hookInto(mpmeAdaptable);
+	}
+
+	/*
+	 * (non-Javadoc) This implementation is a caching and delegation to Triggers
+	 * and Recommenders. Don't override this until you're sure to use your own
+	 * caching technologies or want no caching at all!
+	 * 
+	 * @see tw.edu.nccu.shuttle.sandbox.MPHook#isHookableTo(org.eclipse.core.runtime.IAdaptable)
+	 */
+	protected boolean isHookableIntoCacheSolved(IAdaptable mpmeAdaptable) {
+		for (RuleTrigger trigger : triggers)
+			if (trigger.isHookableInto(mpmeAdaptable))
+				return true;
+		for (RuleRecommender recommender : recommenders)
+			if (recommender.isHookableInto(mpmeAdaptable))
+				return true;
+
+		return false;
+	}
+
+}
